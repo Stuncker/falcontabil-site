@@ -1,0 +1,194 @@
+/* ==========================================================================
+   FALCONTABIL - DESIGN SYSTEM & ESTILOS GLOBAIS
+   Abordagem: Mobile-First | Breakpoints: 480px, 768px, 1024px, 1280px
+   ========================================================================== */
+
+:root {
+    /* Paleta de Cores */
+    --color-primary: #0B2B5C;
+    --color-primary-hover: #082046;
+    --color-secondary: #D4A017;
+    --color-secondary-text: #8A6200; /* Contraste WCAG AA (>= 4.5:1) em fundo claro */
+    --color-bg: #FFFFFF;
+    --color-bg-light: #F3F4F6;
+    --color-text: #1F2937;
+    --color-text-muted: #4B5563;
+    --color-border: #D1D5DB;
+    --color-success: #15803D;
+    --color-success-bg: #F0FDF4;
+    --color-error: #DC2626;
+    --color-error-bg: rgba(254, 226, 226, 0.35);
+    --color-whatsapp: #16A34A;
+
+    /* Tipografia */
+    --font-heading: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+    /* Espaçamentos e Raios */
+    --space-section-mobile: 3.5rem;
+    --space-section-desktop: 5rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-full: 9999px;
+
+    /* Sombras e Transições */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    --transition-base: all 0.3s ease;
+}
+
+/* Base e Comportamento Global */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+}
+
+::selection {
+    background-color: var(--color-primary);
+    color: #FFFFFF;
+}
+
+/* Otimização de Renderização */
+.content-auto {
+    content-visibility: auto;
+}
+
+/* Micro-interações em Cards */
+.card-hover {
+    transition: var(--transition-base);
+}
+
+.card-hover:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Inputs e Estados de Validação do Formulário */
+.form-input-base {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-size: 1rem;
+    line-height: 1.5;
+    outline: none;
+    transition: var(--transition-base);
+}
+
+.form-input-base::placeholder {
+    color: #9CA3AF;
+}
+
+.form-input-base:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(11, 43, 92, 0.2);
+}
+
+.form-input-error {
+    border-color: var(--color-error);
+    background-color: var(--color-error-bg);
+}
+
+.form-input-error:focus {
+    border-color: var(--color-error);
+    box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.2);
+}
+
+.form-input-success {
+    border-color: var(--color-success);
+}
+
+.form-input-success:focus {
+    border-color: var(--color-success);
+    box-shadow: 0 0 0 3px rgba(21, 128, 61, 0.2);
+}
+
+/* Botões de Filtro da Galeria (Página Sobre Nós) */
+.gallery-filter-btn {
+    padding: 0.625rem 1.25rem;
+    border-radius: var(--radius-full);
+    font-size: 0.875rem;
+    font-weight: 600;
+    border: 1px solid #E5E7EB;
+    background-color: var(--color-bg);
+    color: #374151;
+    cursor: pointer;
+    transition: var(--transition-base);
+}
+
+.gallery-filter-btn:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.gallery-filter-btn:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+.gallery-filter-btn.is-active {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: #FFFFFF;
+    box-shadow: var(--shadow-sm);
+}
+
+.gallery-filter-btn.is-active:hover {
+    color: #FFFFFF;
+}
+
+/* Breakpoints Progressivos (Mobile-First) */
+@media (min-width: 480px) {
+    html {
+        scroll-padding-top: 5.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    html {
+        scroll-padding-top: 6rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .section-spacing {
+        padding-top: var(--space-section-desktop);
+        padding-bottom: var(--space-section-desktop);
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+/* Respeito à preferência de redução de movimento (WCAG) */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
