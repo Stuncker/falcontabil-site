@@ -14,9 +14,9 @@
        1. CONFIGURAÇÃO CENTRAL DA EMPRESA (Edite apenas aqui para todo o site)
        ====================================================================== */
     const FALCONTABIL_CONFIG = {
-        whatsappNumber: '5521999999999', // DDI (55) + DDD (21) + Número sem espaços
-        whatsappDisplay: '(21) 99999-9999',
-        emailDestino: 'contato@e-falcontabil.com.br',
+        whatsappNumber: '5521967588822', // DDI (55) + DDD (21) + Número sem espaços
+        whatsappDisplay: '(21) 96758-8822',
+        emailDestino: 'falcontabil@gmail.com',
         formEndpoint: '' // Opcional: Ex. 'https://formspree.io/f/seu-codigo'
     };
 
