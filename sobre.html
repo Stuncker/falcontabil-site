@@ -81,7 +81,7 @@
     }
     </script>
 </head>
-<body class="font-sans text-dark antialiased selection:bg-primary selection:text-white">
+<body class="font-sans text-dark antialiased overflow-x-hidden selection:bg-primary selection:text-white">
     <!-- Link de Acessibilidade para Teclado -->
     <a href="#conteudo-principal" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[60] focus:bg-primary focus:text-white focus:px-4 focus:py-2 focus:rounded-md focus:shadow-lg">
         Pular para o conteúdo principal
@@ -121,7 +121,7 @@
                     aria-label="Abrir menu de navegação"
                     aria-expanded="false"
                     aria-controls="mobileMenu"
-                    class="lg:hidden text-dark text-2xl p-2 rounded-md hover:bg-gray-100 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                    class="lg:hidden text-dark text-2xl p-2.5 rounded-md hover:bg-gray-100 active:bg-gray-200 transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
                 >
                     <i id="menuIcon" class="fa-solid fa-bars" aria-hidden="true"></i>
                 </button>
@@ -129,14 +129,14 @@
         </div>
 
         <!-- Menu Mobile -->
-        <nav id="mobileMenu" aria-label="Navegação mobile" class="lg:hidden hidden bg-white border-t border-gray-100 shadow-lg">
+        <nav id="mobileMenu" aria-label="Navegação mobile" class="lg:hidden hidden bg-white border-t border-gray-100 shadow-lg max-h-[calc(100vh-4.5rem)] overflow-y-auto">
             <div class="container mx-auto px-4 py-4 flex flex-col space-y-2">
-                <a href="index.html" class="text-dark hover:text-primary hover:bg-gray-50 px-3 py-2.5 rounded-md font-medium transition-colors">Início</a>
-                <a href="diferenciais.html" class="text-dark hover:text-primary hover:bg-gray-50 px-3 py-2.5 rounded-md font-medium transition-colors">Diferenciais</a>
-                <a href="servicos.html" class="text-dark hover:text-primary hover:bg-gray-50 px-3 py-2.5 rounded-md font-medium transition-colors">Serviços</a>
-                <a href="sobre.html" aria-current="page" class="text-primary bg-primary/5 px-3 py-2.5 rounded-md font-semibold">Sobre Nós</a>
-                <a href="contato.html" class="text-dark hover:text-primary hover:bg-gray-50 px-3 py-2.5 rounded-md font-medium transition-colors">Contato</a>
-                <a href="contato.html" class="bg-primary hover:bg-primary/90 text-white py-3 mt-2 rounded-md text-center font-medium transition-colors">
+                <a href="index.html" class="text-dark hover:text-primary hover:bg-gray-50 px-3 py-3 rounded-md font-medium transition-colors">Início</a>
+                <a href="diferenciais.html" class="text-dark hover:text-primary hover:bg-gray-50 px-3 py-3 rounded-md font-medium transition-colors">Diferenciais</a>
+                <a href="servicos.html" class="text-dark hover:text-primary hover:bg-gray-50 px-3 py-3 rounded-md font-medium transition-colors">Serviços</a>
+                <a href="sobre.html" aria-current="page" class="text-primary bg-primary/5 px-3 py-3 rounded-md font-semibold">Sobre Nós</a>
+                <a href="contato.html" class="text-dark hover:text-primary hover:bg-gray-50 px-3 py-3 rounded-md font-medium transition-colors">Contato</a>
+                <a href="contato.html" class="bg-primary hover:bg-primary/90 text-white py-3.5 mt-2 rounded-md text-center font-medium transition-colors">
                     Solicitar Orçamento
                 </a>
             </div>
@@ -145,9 +145,9 @@
 
     <main id="conteudo-principal">
         <!-- Cabeçalho da Página / Breadcrumb -->
-        <section class="pt-32 pb-16 bg-gradient-to-br from-primary/5 via-white to-primary/10 border-b border-gray-100">
+        <section class="pt-28 sm:pt-32 pb-12 sm:pb-16 bg-gradient-to-br from-primary/5 via-white to-primary/10 border-b border-gray-100">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <nav aria-label="Breadcrumb" class="mb-6">
+                <nav aria-label="Breadcrumb" class="mb-5 sm:mb-6">
                     <ol class="flex items-center space-x-2 text-sm text-gray-600">
                         <li><a href="index.html" class="hover:text-primary font-medium transition-colors">Início</a></li>
                         <li aria-hidden="true"><i class="fa-solid fa-chevron-right text-xs text-gray-400"></i></li>
@@ -155,45 +155,45 @@
                     </ol>
                 </nav>
 
-                <div class="max-w-3xl space-y-5">
-                    <div class="inline-flex items-center gap-2 bg-primary/10 text-primary text-sm font-semibold px-4 py-1.5 rounded-full">
+                <div class="max-w-3xl space-y-4 sm:space-y-5">
+                    <div class="inline-flex items-center gap-2 bg-primary/10 text-primary text-xs sm:text-sm font-semibold px-3.5 sm:px-4 py-1.5 rounded-full">
                         <i class="fa-solid fa-award text-secondary-text" aria-hidden="true"></i>
                         <span>Nossa História, Cultura e Estrutura</span>
                     </div>
-                    <h1 class="text-[clamp(2rem,4vw,3.25rem)] font-bold text-primary leading-tight">
+                    <h1 class="text-[clamp(1.85rem,4vw,3.25rem)] font-bold text-primary leading-tight">
                         Mais de 35 Anos Construindo Relações de <span class="text-secondary-text">Confiança</span>
                     </h1>
-                    <p class="text-lg text-gray-700 leading-relaxed">
+                    <p class="text-base sm:text-lg text-gray-700 leading-relaxed">
                         Conheça a trajetória da <strong>E-Falcontabil Serviços Contábeis Ltda</strong>, os valores que guiam nossas decisões e os bastidores do nosso escritório em Duque de Caxias - RJ.
                     </p>
                 </div>
 
                 <!-- Indicadores de Autoridade -->
-                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mt-12">
-                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                        <p class="text-3xl font-bold text-primary">+35 Anos</p>
-                        <p class="text-sm text-gray-600 font-medium mt-1">De atuação sólida no mercado</p>
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 mt-8 sm:mt-12">
+                    <div class="bg-white p-4 sm:p-6 rounded-xl shadow-sm border border-gray-100">
+                        <p class="text-2xl sm:text-3xl font-bold text-primary">+35 Anos</p>
+                        <p class="text-xs sm:text-sm text-gray-600 font-medium mt-1">De atuação sólida no mercado</p>
                     </div>
-                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                        <p class="text-3xl font-bold text-primary">100%</p>
-                        <p class="text-sm text-gray-600 font-medium mt-1">Foco em ética e conformidade</p>
+                    <div class="bg-white p-4 sm:p-6 rounded-xl shadow-sm border border-gray-100">
+                        <p class="text-2xl sm:text-3xl font-bold text-primary">100%</p>
+                        <p class="text-xs sm:text-sm text-gray-600 font-medium mt-1">Foco em ética e conformidade</p>
                     </div>
-                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                        <p class="text-2xl sm:text-3xl font-bold text-primary">Conta Azul</p>
-                        <p class="text-sm text-gray-600 font-medium mt-1">Parceiro Certificado Digital</p>
+                    <div class="bg-white p-4 sm:p-6 rounded-xl shadow-sm border border-gray-100">
+                        <p class="text-xl sm:text-3xl font-bold text-primary">Conta Azul</p>
+                        <p class="text-xs sm:text-sm text-gray-600 font-medium mt-1">Parceiro Certificado Digital</p>
                     </div>
-                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                        <p class="text-2xl sm:text-3xl font-bold text-primary">Perícia</p>
-                        <p class="text-sm text-gray-600 font-medium mt-1">Especialistas na área trabalhista</p>
+                    <div class="bg-white p-4 sm:p-6 rounded-xl shadow-sm border border-gray-100">
+                        <p class="text-xl sm:text-3xl font-bold text-primary">Perícia</p>
+                        <p class="text-xs sm:text-sm text-gray-600 font-medium mt-1">Especialistas na área trabalhista</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Nossa História -->
-        <section id="historia" class="py-20 bg-white scroll-mt-20">
+        <section id="historia" class="py-14 sm:py-20 bg-white scroll-mt-20">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+                <div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
                     <div class="lg:w-1/2 w-full">
                         <div class="relative">
                             <img
@@ -212,35 +212,35 @@
                         </div>
                     </div>
 
-                    <div class="lg:w-1/2 space-y-6">
-                        <span class="text-secondary-text font-semibold uppercase tracking-wider text-sm">Quem Somos</span>
-                        <h2 class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-primary">Tradição que Acompanha a Evolução do Seu Negócio</h2>
+                    <div class="lg:w-1/2 space-y-5 sm:space-y-6">
+                        <span class="text-secondary-text font-semibold uppercase tracking-wider text-xs sm:text-sm">Quem Somos</span>
+                        <h2 class="text-[clamp(1.65rem,3vw,2.5rem)] font-bold text-primary">Tradição que Acompanha a Evolução do Seu Negócio</h2>
 
-                        <p class="text-gray-700 leading-relaxed">
+                        <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
                             Com mais de <strong>35 anos de atuação no mercado</strong>, a <strong>Falcontabil</strong> (<em>E-Falcontabil Serviços Contábeis Ltda</em>) consolidou-se como referência em contabilidade, perícia trabalhista e consultoria empresarial em Duque de Caxias e região.
                         </p>
-                        <p class="text-gray-700 leading-relaxed">
+                        <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
                             Acreditamos que um escritório contábil precisa ir além da entrega de guias e obrigações acessórias. Por isso, buscamos compreender a fundo as particularidades de cada segmento para oferecer soluções consistentes, planejamento tributário seguro e apoio estratégico na tomada de decisões.
                         </p>
-                        <p class="text-gray-700 leading-relaxed">
+                        <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
                             Combinamos a experiência de décadas com tecnologia de ponta — incluindo integração certificada com a plataforma <strong>Conta Azul</strong> — mantendo sempre a proximidade humana no atendimento, pois entendemos que o maior ativo de qualquer empreendimento são as pessoas que nele atuam.
                         </p>
 
-                        <div class="grid sm:grid-cols-2 gap-4 pt-2">
+                        <div class="grid sm:grid-cols-2 gap-4 pt-2 text-sm sm:text-base">
                             <div class="flex items-start gap-3">
-                                <i class="fa-solid fa-circle-check text-secondary-text text-lg mt-0.5" aria-hidden="true"></i>
+                                <i class="fa-solid fa-circle-check text-secondary-text text-lg mt-0.5 shrink-0" aria-hidden="true"></i>
                                 <span class="text-gray-700 font-medium">Atendimento consultivo e próximo</span>
                             </div>
                             <div class="flex items-start gap-3">
-                                <i class="fa-solid fa-circle-check text-secondary-text text-lg mt-0.5" aria-hidden="true"></i>
+                                <i class="fa-solid fa-circle-check text-secondary-text text-lg mt-0.5 shrink-0" aria-hidden="true"></i>
                                 <span class="text-gray-700 font-medium">Processos digitais e ágeis</span>
                             </div>
                             <div class="flex items-start gap-3">
-                                <i class="fa-solid fa-circle-check text-secondary-text text-lg mt-0.5" aria-hidden="true"></i>
+                                <i class="fa-solid fa-circle-check text-secondary-text text-lg mt-0.5 shrink-0" aria-hidden="true"></i>
                                 <span class="text-gray-700 font-medium">Rigor técnico fiscal e trabalhista</span>
                             </div>
                             <div class="flex items-start gap-3">
-                                <i class="fa-solid fa-circle-check text-secondary-text text-lg mt-0.5" aria-hidden="true"></i>
+                                <i class="fa-solid fa-circle-check text-secondary-text text-lg mt-0.5 shrink-0" aria-hidden="true"></i>
                                 <span class="text-gray-700 font-medium">Melhoria contínua de resultados</span>
                             </div>
                         </div>
@@ -250,41 +250,41 @@
         </section>
 
         <!-- Missão, Visão e Valores -->
-        <section id="cultura" class="py-20 bg-light scroll-mt-20">
+        <section id="cultura" class="py-14 sm:py-20 bg-light scroll-mt-20">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <span class="text-secondary-text font-semibold uppercase tracking-wider text-sm">Cultura Organizacional</span>
-                    <h2 class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-primary mt-2">Missão, Visão e Valores</h2>
-                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Os pilares que sustentam nossa atuação diária e o relacionamento duradouro com cada cliente.</p>
+                <div class="text-center mb-12 sm:mb-16">
+                    <span class="text-secondary-text font-semibold uppercase tracking-wider text-xs sm:text-sm">Cultura Organizacional</span>
+                    <h2 class="text-[clamp(1.65rem,3vw,2.5rem)] font-bold text-primary mt-2">Missão, Visão e Valores</h2>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto text-sm sm:text-base">Os pilares que sustentam nossa atuação diária e o relacionamento duradouro com cada cliente.</p>
                 </div>
 
-                <div class="grid md:grid-cols-3 gap-8">
-                    <article class="bg-white p-8 rounded-xl shadow-sm card-hover border border-gray-100">
-                        <div class="w-14 h-14 bg-primary/10 text-primary rounded-lg flex items-center justify-center text-2xl mb-6" aria-hidden="true">
+                <div class="grid md:grid-cols-3 gap-6 sm:gap-8">
+                    <article class="bg-white p-6 sm:p-8 rounded-xl shadow-sm card-hover border border-gray-100">
+                        <div class="w-14 h-14 bg-primary/10 text-primary rounded-lg flex items-center justify-center text-2xl mb-5 sm:mb-6" aria-hidden="true">
                             <i class="fa-solid fa-bullseye"></i>
                         </div>
                         <h3 class="text-xl font-bold text-primary mb-3">Nossa Missão</h3>
-                        <p class="text-gray-600 leading-relaxed">
+                        <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
                             Fornecer soluções contábeis, fiscais, trabalhistas e consultivas com precisão técnica e agilidade, garantindo segurança jurídica e suporte estratégico para o crescimento sustentável dos nossos clientes.
                         </p>
                     </article>
 
-                    <article class="bg-white p-8 rounded-xl shadow-sm card-hover border border-gray-100">
-                        <div class="w-14 h-14 bg-primary/10 text-primary rounded-lg flex items-center justify-center text-2xl mb-6" aria-hidden="true">
+                    <article class="bg-white p-6 sm:p-8 rounded-xl shadow-sm card-hover border border-gray-100">
+                        <div class="w-14 h-14 bg-primary/10 text-primary rounded-lg flex items-center justify-center text-2xl mb-5 sm:mb-6" aria-hidden="true">
                             <i class="fa-solid fa-eye"></i>
                         </div>
                         <h3 class="text-xl font-bold text-primary mb-3">Nossa Visão</h3>
-                        <p class="text-gray-600 leading-relaxed">
+                        <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
                             Ser reconhecida na Baixada Fluminense e no Rio de Janeiro como a parceira contábil mais confiável e inovadora, unindo mais de três décadas de tradição à eficiência da contabilidade digital.
                         </p>
                     </article>
 
-                    <article class="bg-white p-8 rounded-xl shadow-sm card-hover border border-gray-100">
-                        <div class="w-14 h-14 bg-primary/10 text-primary rounded-lg flex items-center justify-center text-2xl mb-6" aria-hidden="true">
+                    <article class="bg-white p-6 sm:p-8 rounded-xl shadow-sm card-hover border border-gray-100">
+                        <div class="w-14 h-14 bg-primary/10 text-primary rounded-lg flex items-center justify-center text-2xl mb-5 sm:mb-6" aria-hidden="true">
                             <i class="fa-solid fa-gem"></i>
                         </div>
                         <h3 class="text-xl font-bold text-primary mb-3">Nossos Valores</h3>
-                        <p class="text-gray-600 leading-relaxed">
+                        <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
                             Nossa conduta é inegociável e baseada em sete princípios essenciais: <strong>praticidade, comprometimento, responsabilidade, ética, respeito, zelo e transparência</strong>.
                         </p>
                     </article>
@@ -293,16 +293,16 @@
         </section>
 
         <!-- Espaço para Galeria de Fotos -->
-        <section id="galeria" class="py-20 bg-white scroll-mt-20">
+        <section id="galeria" class="py-14 sm:py-20 bg-white scroll-mt-20">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-12">
-                    <span class="text-secondary-text font-semibold uppercase tracking-wider text-sm">Nosso Dia a Dia</span>
-                    <h2 class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-primary mt-2">Galeria de Fotos</h2>
-                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Conheça nossos espaços de atendimento, nossa equipe em ação e momentos importantes da história da Falcontabil. Clique em qualquer foto para ampliar.</p>
+                <div class="text-center mb-10 sm:mb-12">
+                    <span class="text-secondary-text font-semibold uppercase tracking-wider text-xs sm:text-sm">Nosso Dia a Dia</span>
+                    <h2 class="text-[clamp(1.65rem,3vw,2.5rem)] font-bold text-primary mt-2">Galeria de Fotos</h2>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto text-sm sm:text-base">Conheça nossos espaços de atendimento, nossa equipe em ação e momentos importantes da história da Falcontabil. Clique em qualquer foto para ampliar.</p>
                 </div>
 
                 <!-- Filtros da Galeria -->
-                <div class="flex flex-wrap justify-center gap-3 mb-12" role="group" aria-label="Filtrar fotos por categoria">
+                <div class="flex flex-wrap justify-center gap-2.5 sm:gap-3 mb-10 sm:mb-12" role="group" aria-label="Filtrar fotos por categoria">
                     <button type="button" data-filter="all" aria-pressed="true" class="gallery-filter-btn is-active">
                         Todas as Fotos
                     </button>
@@ -517,18 +517,18 @@
         </section>
 
         <!-- Chamada para Ação (CTA) -->
-        <section class="py-16 bg-primary text-white">
+        <section class="py-14 sm:py-16 bg-primary text-white">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex flex-col lg:flex-row items-center justify-between gap-8">
                     <div class="max-w-2xl text-center lg:text-left">
                         <h2 class="text-[clamp(1.5rem,3vw,2.25rem)] font-bold text-white">
                             Pronto para contar com uma contabilidade estratégica?
                         </h2>
-                        <p class="text-gray-200 mt-3 text-lg">
+                        <p class="text-gray-200 mt-3 text-base sm:text-lg">
                             Converse com nossos especialistas e descubra como podemos simplificar a gestão contábil, fiscal e trabalhista da sua empresa.
                         </p>
                     </div>
-                    <div class="flex flex-col sm:flex-row gap-4 shrink-0">
+                    <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto shrink-0">
                         <a href="contato.html" class="bg-secondary hover:bg-secondary/90 text-primary font-bold px-8 py-3.5 rounded-md text-center transition-all duration-300 shadow-md">
                             Solicitar Orçamento
                         </a>
@@ -553,7 +553,7 @@
             id="lightboxClose"
             type="button"
             aria-label="Fechar visualização da foto"
-            class="absolute top-4 right-4 sm:top-6 sm:right-6 w-11 h-11 rounded-full bg-white/15 hover:bg-white/25 text-white flex items-center justify-center text-xl transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+            class="absolute top-4 right-4 sm:top-6 sm:right-6 z-10 w-11 h-11 rounded-full bg-white/15 hover:bg-white/25 text-white flex items-center justify-center text-xl transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
         >
             <i class="fa-solid fa-xmark" aria-hidden="true"></i>
         </button>
@@ -562,4 +562,148 @@
             id="lightboxPrev"
             type="button"
             aria-label="Foto anterior"
-            class="absolute left-3 sm:left-6 w-11 h-11 rounded-full bg-white/15 hover:bg-
+            class="absolute left-2 sm:left-6 z-10 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-black/50 sm:bg-white/15 hover:bg-white/25 text-white flex items-center justify-center text-lg transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+        >
+            <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+        </button>
+
+        <div class="max-w-4xl w-full flex flex-col items-center px-8 sm:px-14">
+            <img id="lightboxImg" src="" alt="" class="max-h-[70vh] sm:max-h-[75vh] w-auto max-w-full rounded-lg shadow-2xl object-contain">
+            <div class="text-center mt-4 px-2">
+                <h3 id="lightboxTitle" class="text-base sm:text-lg font-bold text-white"></h3>
+                <p id="lightboxDesc" class="text-xs sm:text-sm text-gray-300 mt-1"></p>
+            </div>
+        </div>
+
+        <button
+            id="lightboxNext"
+            type="button"
+            aria-label="Próxima foto"
+            class="absolute right-2 sm:right-6 z-10 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-black/50 sm:bg-white/15 hover:bg-white/25 text-white flex items-center justify-center text-lg transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+        >
+            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+        </button>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="bg-primary text-white pt-14 sm:pt-16 pb-24 sm:pb-10 border-t border-white/15">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/15">
+                <div class="space-y-4">
+                    <a href="index.html" class="inline-flex items-center justify-center bg-white h-14 w-36 overflow-hidden rounded-xl shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary" aria-label="eFalcontabil - Página Inicial">
+                        <img
+                            src="img/logo-efalcontabil.png"
+                            alt="eFalcontabil - Contabilidade Digital"
+                            width="144"
+                            height="144"
+                            loading="lazy"
+                            decoding="async"
+                            class="h-36 w-36 max-w-none object-contain"
+                        >
+                    </a>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        Mais de 35 anos oferecendo soluções contábeis, fiscais, trabalhistas e consultoria empresarial com ética, transparência e comprometimento.
+                    </p>
+                    <div class="flex space-x-3 pt-2">
+                        <a href="https://instagram.com/efalcontabil" target="_blank" rel="noopener noreferrer" aria-label="Instagram da Falcontabil" class="w-10 h-10 rounded-full bg-white/10 hover:bg-secondary hover:text-primary flex items-center justify-center transition-all duration-300">
+                            <i class="fa-brands fa-instagram text-lg" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://e-falcontabil.com.br" target="_blank" rel="noopener noreferrer" aria-label="Site oficial da Falcontabil" class="w-10 h-10 rounded-full bg-white/10 hover:bg-secondary hover:text-primary flex items-center justify-center transition-all duration-300">
+                            <i class="fa-solid fa-globe text-lg" aria-hidden="true"></i>
+                        </a>
+                        <a data-whatsapp-link href="https://wa.me/5521967588822" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp da Falcontabil" class="w-10 h-10 rounded-full bg-white/10 hover:bg-green-500 hover:text-white flex items-center justify-center transition-all duration-300">
+                            <i class="fa-brands fa-whatsapp text-lg" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-secondary">Navegação</h4>
+                    <ul class="space-y-2.5 text-sm text-gray-300">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Início</a></li>
+                        <li><a href="diferenciais.html" class="hover:text-white transition-colors">Diferenciais</a></li>
+                        <li><a href="servicos.html" class="hover:text-white transition-colors">Serviços</a></li>
+                        <li><a href="sobre.html" class="text-white font-semibold">Sobre Nós</a></li>
+                        <li><a href="index.html#depoimentos" class="hover:text-white transition-colors">Depoimentos</a></li>
+                        <li><a href="contato.html" class="hover:text-white transition-colors">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-secondary">Serviços</h4>
+                    <ul class="space-y-2.5 text-sm text-gray-300">
+                        <li><a href="servicos.html#contabilidade-geral" class="hover:text-white transition-colors">Contabilidade Geral</a></li>
+                        <li><a href="servicos.html#assessoria-fiscal" class="hover:text-white transition-colors">Assessoria Fiscal e Tributária</a></li>
+                        <li><a href="servicos.html#departamento-pessoal" class="hover:text-white transition-colors">Departamento Pessoal e RH</a></li>
+                        <li><a href="servicos.html#pericia-trabalhista" class="hover:text-white transition-colors">Perícia Trabalhista</a></li>
+                        <li><a href="servicos.html#abertura-empresas" class="hover:text-white transition-colors">Abertura e Regularização</a></li>
+                        <li><a href="servicos.html#consultoria" class="hover:text-white transition-colors">Consultoria Empresarial</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-secondary">Contato</h4>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-location-dot text-secondary mt-1 shrink-0" aria-hidden="true"></i>
+                            <span>Centro, Duque de Caxias - RJ</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-brands fa-whatsapp text-secondary mt-1 shrink-0" aria-hidden="true"></i>
+                            <a data-whatsapp-link data-whatsapp-text href="https://wa.me/5521967588822" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">+55 (21) 96758-8822</a>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-regular fa-envelope text-secondary mt-1 shrink-0" aria-hidden="true"></i>
+                            <a data-email-link href="mailto:contato@e-falcontabil.com.br" class="hover:text-white transition-colors break-all">contato@e-falcontabil.com.br</a>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-regular fa-clock text-secondary mt-1 shrink-0" aria-hidden="true"></i>
+                            <span>Seg a Sex: 08h30 às 17h30</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-300 gap-4 text-center sm:text-left">
+                <p>&copy; <span data-current-year>2026</span> E-Falcontabil Serviços Contábeis Ltda. Todos os direitos reservados.</p>
+                <p>Duque de Caxias - RJ • Atendimento Consultivo e Digital</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante de WhatsApp -->
+    <a
+        data-whatsapp-link
+        data-whatsapp-msg="Olá! Vim pela página Sobre Nós da Falcontabil."
+        href="https://wa.me/5521967588822"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Falar com a Falcontabil pelo WhatsApp"
+        class="fixed bottom-4 right-4 sm:bottom-5 sm:right-5 z-40 w-12 h-12 sm:w-14 sm:h-14 bg-green-600 hover:bg-green-700 text-white rounded-full shadow-xl flex items-center justify-center text-2xl transition-all duration-300 hover:scale-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-600 focus-visible:ring-offset-2"
+    >
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <!-- Scripts Compartilhados -->
+    <script src="js/script.js" defer></script>
+
+    <!-- Garantia extra para o Menu Mobile caso o arquivo externo demore ou falhe -->
+    <script>
+        window.addEventListener('load', function () {
+            if (window.__falcontabilInitialized) return;
+            var menuBtn = document.getElementById('menuBtn');
+            var menuIcon = document.getElementById('menuIcon');
+            var mobileMenu = document.getElementById('mobileMenu');
+            if (!menuBtn || !mobileMenu) return;
+            menuBtn.addEventListener('click', function () {
+                var isHidden = mobileMenu.classList.toggle('hidden');
+                menuBtn.setAttribute('aria-expanded', String(!isHidden));
+                if (menuIcon) {
+                    menuIcon.classList.toggle('fa-bars', isHidden);
+                    menuIcon.classList.toggle('fa-xmark', !isHidden);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
