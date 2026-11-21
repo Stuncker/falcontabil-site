@@ -81,7 +81,7 @@
     }
     </script>
 </head>
-<body class="font-sans text-dark antialiased selection:bg-primary selection:text-white">
+<body class="font-sans text-dark antialiased overflow-x-hidden selection:bg-primary selection:text-white">
     <!-- Link de Acessibilidade para Teclado -->
     <a href="#conteudo-principal" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[60] focus:bg-primary focus:text-white focus:px-4 focus:py-2 focus:rounded-md focus:shadow-lg">
         Pular para o conteúdo principal
@@ -121,7 +121,7 @@
                     aria-label="Abrir menu de navegação"
                     aria-expanded="false"
                     aria-controls="mobileMenu"
-                    class="lg:hidden text-dark text-2xl p-2 rounded-md hover:bg-gray-100 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                    class="lg:hidden text-dark text-2xl p-2.5 rounded-md hover:bg-gray-100 active:bg-gray-200 transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
                 >
                     <i id="menuIcon" class="fa-solid fa-bars" aria-hidden="true"></i>
                 </button>
@@ -129,14 +129,14 @@
         </div>
 
         <!-- Menu Mobile -->
-        <nav id="mobileMenu" aria-label="Navegação mobile" class="lg:hidden hidden bg-white border-t border-gray-100 shadow-lg">
+        <nav id="mobileMenu" aria-label="Navegação mobile" class="lg:hidden hidden bg-white border-t border-gray-100 shadow-lg max-h-[calc(100vh-4.5rem)] overflow-y-auto">
             <div class="container mx-auto px-4 py-4 flex flex-col space-y-2">
-                <a href="index.html" class="text-dark hover:text-primary hover:bg-gray-50 px-3 py-2.5 rounded-md font-medium transition-colors">Início</a>
-                <a href="diferenciais.html" class="text-dark hover:text-primary hover:bg-gray-50 px-3 py-2.5 rounded-md font-medium transition-colors">Diferenciais</a>
-                <a href="servicos.html" aria-current="page" class="text-primary bg-primary/5 px-3 py-2.5 rounded-md font-semibold">Serviços</a>
-                <a href="sobre.html" class="text-dark hover:text-primary hover:bg-gray-50 px-3 py-2.5 rounded-md font-medium transition-colors">Sobre Nós</a>
-                <a href="contato.html" class="text-dark hover:text-primary hover:bg-gray-50 px-3 py-2.5 rounded-md font-medium transition-colors">Contato</a>
-                <a href="contato.html" class="bg-primary hover:bg-primary/90 text-white py-3 mt-2 rounded-md text-center font-medium transition-colors">
+                <a href="index.html" class="text-dark hover:text-primary hover:bg-gray-50 px-3 py-3 rounded-md font-medium transition-colors">Início</a>
+                <a href="diferenciais.html" class="text-dark hover:text-primary hover:bg-gray-50 px-3 py-3 rounded-md font-medium transition-colors">Diferenciais</a>
+                <a href="servicos.html" aria-current="page" class="text-primary bg-primary/5 px-3 py-3 rounded-md font-semibold">Serviços</a>
+                <a href="sobre.html" class="text-dark hover:text-primary hover:bg-gray-50 px-3 py-3 rounded-md font-medium transition-colors">Sobre Nós</a>
+                <a href="contato.html" class="text-dark hover:text-primary hover:bg-gray-50 px-3 py-3 rounded-md font-medium transition-colors">Contato</a>
+                <a href="contato.html" class="bg-primary hover:bg-primary/90 text-white py-3.5 mt-2 rounded-md text-center font-medium transition-colors">
                     Solicitar Orçamento
                 </a>
             </div>
@@ -145,9 +145,9 @@
 
     <main id="conteudo-principal">
         <!-- Cabeçalho da Página / Breadcrumb -->
-        <section class="pt-32 pb-16 bg-gradient-to-br from-primary/5 via-white to-primary/10 border-b border-gray-100">
+        <section class="pt-28 sm:pt-32 pb-12 sm:pb-16 bg-gradient-to-br from-primary/5 via-white to-primary/10 border-b border-gray-100">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <nav aria-label="Breadcrumb" class="mb-6">
+                <nav aria-label="Breadcrumb" class="mb-5 sm:mb-6">
                     <ol class="flex items-center space-x-2 text-sm text-gray-600">
                         <li><a href="index.html" class="hover:text-primary font-medium transition-colors">Início</a></li>
                         <li aria-hidden="true"><i class="fa-solid fa-chevron-right text-xs text-gray-400"></i></li>
@@ -155,37 +155,37 @@
                     </ol>
                 </nav>
 
-                <div class="max-w-3xl space-y-5">
-                    <div class="inline-flex items-center gap-2 bg-primary/10 text-primary text-sm font-semibold px-4 py-1.5 rounded-full">
+                <div class="max-w-3xl space-y-4 sm:space-y-5">
+                    <div class="inline-flex items-center gap-2 bg-primary/10 text-primary text-xs sm:text-sm font-semibold px-3.5 sm:px-4 py-1.5 rounded-full">
                         <i class="fa-solid fa-briefcase text-secondary-text" aria-hidden="true"></i>
                         <span>Áreas de Atuação</span>
                     </div>
-                    <h1 class="text-[clamp(2rem,4vw,3.25rem)] font-bold text-primary leading-tight">
+                    <h1 class="text-[clamp(1.85rem,4vw,3.25rem)] font-bold text-primary leading-tight">
                         Soluções Contábeis Completas para Cada Fase do <span class="text-secondary-text">Seu Negócio</span>
                     </h1>
-                    <p class="text-lg text-gray-700 leading-relaxed">
+                    <p class="text-base sm:text-lg text-gray-700 leading-relaxed">
                         Da abertura da empresa ao planejamento tributário e perícia trabalhista: atendemos empresas, prestadores de serviços e escritórios jurídicos com rigor técnico e agilidade.
                     </p>
                 </div>
 
                 <!-- Atalhos Rápidos para os Serviços -->
-                <div class="flex flex-wrap gap-2.5 mt-10" aria-label="Atalhos para os serviços">
-                    <a href="#contabilidade-geral" class="px-4 py-2 rounded-full bg-white border border-gray-200 text-sm font-medium text-primary hover:border-primary hover:bg-primary hover:text-white transition-all duration-300 shadow-sm">
+                <div class="flex flex-wrap gap-2 sm:gap-2.5 mt-8 sm:mt-10" aria-label="Atalhos para os serviços">
+                    <a href="#contabilidade-geral" class="px-3.5 sm:px-4 py-2 rounded-full bg-white border border-gray-200 text-xs sm:text-sm font-medium text-primary hover:border-primary hover:bg-primary hover:text-white transition-all duration-300 shadow-sm">
                         Contabilidade Geral
                     </a>
-                    <a href="#assessoria-fiscal" class="px-4 py-2 rounded-full bg-white border border-gray-200 text-sm font-medium text-primary hover:border-primary hover:bg-primary hover:text-white transition-all duration-300 shadow-sm">
+                    <a href="#assessoria-fiscal" class="px-3.5 sm:px-4 py-2 rounded-full bg-white border border-gray-200 text-xs sm:text-sm font-medium text-primary hover:border-primary hover:bg-primary hover:text-white transition-all duration-300 shadow-sm">
                         Assessoria Fiscal
                     </a>
-                    <a href="#departamento-pessoal" class="px-4 py-2 rounded-full bg-white border border-gray-200 text-sm font-medium text-primary hover:border-primary hover:bg-primary hover:text-white transition-all duration-300 shadow-sm">
+                    <a href="#departamento-pessoal" class="px-3.5 sm:px-4 py-2 rounded-full bg-white border border-gray-200 text-xs sm:text-sm font-medium text-primary hover:border-primary hover:bg-primary hover:text-white transition-all duration-300 shadow-sm">
                         Departamento Pessoal
                     </a>
-                    <a href="#pericia-trabalhista" class="px-4 py-2 rounded-full bg-white border border-gray-200 text-sm font-medium text-primary hover:border-primary hover:bg-primary hover:text-white transition-all duration-300 shadow-sm">
+                    <a href="#pericia-trabalhista" class="px-3.5 sm:px-4 py-2 rounded-full bg-white border border-gray-200 text-xs sm:text-sm font-medium text-primary hover:border-primary hover:bg-primary hover:text-white transition-all duration-300 shadow-sm">
                         Perícia Trabalhista
                     </a>
-                    <a href="#abertura-empresas" class="px-4 py-2 rounded-full bg-white border border-gray-200 text-sm font-medium text-primary hover:border-primary hover:bg-primary hover:text-white transition-all duration-300 shadow-sm">
+                    <a href="#abertura-empresas" class="px-3.5 sm:px-4 py-2 rounded-full bg-white border border-gray-200 text-xs sm:text-sm font-medium text-primary hover:border-primary hover:bg-primary hover:text-white transition-all duration-300 shadow-sm">
                         Abertura e Regularização
                     </a>
-                    <a href="#consultoria" class="px-4 py-2 rounded-full bg-white border border-gray-200 text-sm font-medium text-primary hover:border-primary hover:bg-primary hover:text-white transition-all duration-300 shadow-sm">
+                    <a href="#consultoria" class="px-3.5 sm:px-4 py-2 rounded-full bg-white border border-gray-200 text-xs sm:text-sm font-medium text-primary hover:border-primary hover:bg-primary hover:text-white transition-all duration-300 shadow-sm">
                         Consultoria Empresarial
                     </a>
                 </div>
@@ -193,12 +193,12 @@
         </section>
 
         <!-- Catálogo Detalhado de Serviços -->
-        <section class="py-20 bg-white">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        <section class="py-14 sm:py-20 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 space-y-8 sm:space-y-12">
 
                 <!-- Serviço 1: Contabilidade Geral -->
-                <article id="contabilidade-geral" class="scroll-mt-24 bg-light rounded-2xl p-8 sm:p-10 border border-gray-100 shadow-sm card-hover">
-                    <div class="grid lg:grid-cols-12 gap-8 items-start">
+                <article id="contabilidade-geral" class="scroll-mt-24 bg-light rounded-2xl p-6 sm:p-10 border border-gray-100 shadow-sm card-hover">
+                    <div class="grid lg:grid-cols-12 gap-6 sm:gap-8 items-start">
                         <div class="lg:col-span-7 space-y-4">
                             <div class="inline-flex items-center gap-3">
                                 <div class="w-12 h-12 bg-secondary/20 text-secondary-text rounded-lg flex items-center justify-center text-xl shrink-0" aria-hidden="true">
@@ -207,38 +207,38 @@
                                 <span class="text-xs font-bold uppercase tracking-wider text-secondary-text">Gestão Patrimonial e Financeira</span>
                             </div>
                             <h2 class="text-2xl sm:text-3xl font-bold text-primary">Contabilidade Geral</h2>
-                            <p class="text-gray-700 leading-relaxed">
+                            <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
                                 Transformamos os dados financeiros da sua empresa em demonstrações confiáveis para atender ao Fisco, instituições financeiras e, principalmente, orientar a gestão do seu negócio com total segurança.
                             </p>
                             <div class="pt-2 flex flex-wrap gap-3">
-                                <a href="contato.html?servico=Contabilidade%20Geral" class="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-md font-medium transition-all duration-300 inline-flex items-center gap-2 shadow-sm">
+                                <a href="contato.html?servico=Contabilidade%20Geral" class="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-md font-medium transition-all duration-300 inline-flex items-center justify-center gap-2 shadow-sm w-full sm:w-auto">
                                     <span>Solicitar Orçamento</span>
                                     <i class="fa-solid fa-arrow-right text-sm" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
 
-                        <div class="lg:col-span-5 bg-white p-6 rounded-xl border border-gray-100">
+                        <div class="lg:col-span-5 bg-white p-5 sm:p-6 rounded-xl border border-gray-100">
                             <h3 class="text-sm font-bold uppercase tracking-wider text-primary mb-4">O que está incluso:</h3>
                             <ul class="space-y-3 text-sm text-gray-700">
                                 <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5 shrink-0" aria-hidden="true"></i>
                                     <span>Escrituração contábil mensal e conciliação bancária</span>
                                 </li>
                                 <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5 shrink-0" aria-hidden="true"></i>
                                     <span>Balanço Patrimonial e Demonstração do Resultado (DRE)</span>
                                 </li>
                                 <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5 shrink-0" aria-hidden="true"></i>
                                     <span>Emissão de balancetes e relatórios gerenciais periódicos</span>
                                 </li>
                                 <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5 shrink-0" aria-hidden="true"></i>
                                     <span>Entrega de ECD, ECF e demais declarações contábeis</span>
                                 </li>
                                 <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5 shrink-0" aria-hidden="true"></i>
                                     <span>Apuração segura para distribuição de lucros isentos aos sócios</span>
                                 </li>
                             </ul>
@@ -247,8 +247,8 @@
                 </article>
 
                 <!-- Serviço 2: Assessoria Fiscal e Tributária -->
-                <article id="assessoria-fiscal" class="scroll-mt-24 bg-light rounded-2xl p-8 sm:p-10 border border-gray-100 shadow-sm card-hover">
-                    <div class="grid lg:grid-cols-12 gap-8 items-start">
+                <article id="assessoria-fiscal" class="scroll-mt-24 bg-light rounded-2xl p-6 sm:p-10 border border-gray-100 shadow-sm card-hover">
+                    <div class="grid lg:grid-cols-12 gap-6 sm:gap-8 items-start">
                         <div class="lg:col-span-7 space-y-4">
                             <div class="inline-flex items-center gap-3">
                                 <div class="w-12 h-12 bg-secondary/20 text-secondary-text rounded-lg flex items-center justify-center text-xl shrink-0" aria-hidden="true">
@@ -257,38 +257,38 @@
                                 <span class="text-xs font-bold uppercase tracking-wider text-secondary-text">Inteligência Tributária</span>
                             </div>
                             <h2 class="text-2xl sm:text-3xl font-bold text-primary">Assessoria Fiscal e Tributária</h2>
-                            <p class="text-gray-700 leading-relaxed">
+                            <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
                                 Analisamos o enquadramento fiscal ideal para a sua operação — Simples Nacional, Lucro Presumido ou Lucro Real — evitando o pagamento indevido de tributos e garantindo conformidade total com a legislação.
                             </p>
                             <div class="pt-2 flex flex-wrap gap-3">
-                                <a href="contato.html?servico=Assessoria%20Fiscal%20e%20Tribut%C3%A1ria" class="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-md font-medium transition-all duration-300 inline-flex items-center gap-2 shadow-sm">
+                                <a href="contato.html?servico=Assessoria%20Fiscal%20e%20Tribut%C3%A1ria" class="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-md font-medium transition-all duration-300 inline-flex items-center justify-center gap-2 shadow-sm w-full sm:w-auto">
                                     <span>Solicitar Orçamento</span>
                                     <i class="fa-solid fa-arrow-right text-sm" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
 
-                        <div class="lg:col-span-5 bg-white p-6 rounded-xl border border-gray-100">
+                        <div class="lg:col-span-5 bg-white p-5 sm:p-6 rounded-xl border border-gray-100">
                             <h3 class="text-sm font-bold uppercase tracking-wider text-primary mb-4">O que está incluso:</h3>
                             <ul class="space-y-3 text-sm text-gray-700">
                                 <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5 shrink-0" aria-hidden="true"></i>
                                     <span>Estudo e planejamento tributário anual comparativo</span>
                                 </li>
                                 <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5 shrink-0" aria-hidden="true"></i>
                                     <span>Apuração de impostos federais, estaduais e municipais</span>
                                 </li>
                                 <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5 shrink-0" aria-hidden="true"></i>
                                     <span>Entrega de SPED Fiscal, EFD Contribuições, DCTFWeb e PGDAS</span>
                                 </li>
                                 <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5 shrink-0" aria-hidden="true"></i>
                                     <span>Orientação na emissão de NF-e, NFS-e e classificação fiscal (NCM)</span>
                                 </li>
                                 <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5 shrink-0" aria-hidden="true"></i>
                                     <span>Acompanhamento de parcelamentos e regularidade fiscal</span>
                                 </li>
                             </ul>
@@ -297,8 +297,8 @@
                 </article>
 
                 <!-- Serviço 3: Departamento Pessoal e RH -->
-                <article id="departamento-pessoal" class="scroll-mt-24 bg-light rounded-2xl p-8 sm:p-10 border border-gray-100 shadow-sm card-hover">
-                    <div class="grid lg:grid-cols-12 gap-8 items-start">
+                <article id="departamento-pessoal" class="scroll-mt-24 bg-light rounded-2xl p-6 sm:p-10 border border-gray-100 shadow-sm card-hover">
+                    <div class="grid lg:grid-cols-12 gap-6 sm:gap-8 items-start">
                         <div class="lg:col-span-7 space-y-4">
                             <div class="inline-flex items-center gap-3">
                                 <div class="w-12 h-12 bg-secondary/20 text-secondary-text rounded-lg flex items-center justify-center text-xl shrink-0" aria-hidden="true">
@@ -307,38 +307,38 @@
                                 <span class="text-xs font-bold uppercase tracking-wider text-secondary-text">Gestão Trabalhista</span>
                             </div>
                             <h2 class="text-2xl sm:text-3xl font-bold text-primary">Departamento Pessoal e RH</h2>
-                            <p class="text-gray-700 leading-relaxed">
+                            <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
                                 Cuidamos de toda a rotina trabalhista e previdenciária da sua equipe com rigor nos prazos e cumprimento integral da CLT, convenções coletivas e eventos do eSocial.
                             </p>
                             <div class="pt-2 flex flex-wrap gap-3">
-                                <a href="contato.html?servico=Departamento%20Pessoal%20e%20RH" class="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-md font-medium transition-all duration-300 inline-flex items-center gap-2 shadow-sm">
+                                <a href="contato.html?servico=Departamento%20Pessoal%20e%20RH" class="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-md font-medium transition-all duration-300 inline-flex items-center justify-center gap-2 shadow-sm w-full sm:w-auto">
                                     <span>Solicitar Orçamento</span>
                                     <i class="fa-solid fa-arrow-right text-sm" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
 
-                        <div class="lg:col-span-5 bg-white p-6 rounded-xl border border-gray-100">
+                        <div class="lg:col-span-5 bg-white p-5 sm:p-6 rounded-xl border border-gray-100">
                             <h3 class="text-sm font-bold uppercase tracking-wider text-primary mb-4">O que está incluso:</h3>
                             <ul class="space-y-3 text-sm text-gray-700">
                                 <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5 shrink-0" aria-hidden="true"></i>
                                     <span>Processamento da folha de pagamento, pró-labore e 13º salário</span>
                                 </li>
                                 <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5 shrink-0" aria-hidden="true"></i>
                                     <span>Admissões, controle de férias, afastamentos e rescisões</span>
                                 </li>
                                 <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5 shrink-0" aria-hidden="true"></i>
                                     <span>Transmissão de todos os eventos do eSocial, FGTS Digital e INSS</span>
                                 </li>
                                 <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5 shrink-0" aria-hidden="true"></i>
                                     <span>Orientação preventiva sobre acordos sindicais e passivos trabalhistas</span>
                                 </li>
                                 <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5 shrink-0" aria-hidden="true"></i>
                                     <span>Informe de rendimentos e obrigações anuais</span>
                                 </li>
                             </ul>
@@ -347,8 +347,8 @@
                 </article>
 
                 <!-- Serviço 4: Perícia Trabalhista -->
-                <article id="pericia-trabalhista" class="scroll-mt-24 bg-primary text-white rounded-2xl p-8 sm:p-10 shadow-md card-hover">
-                    <div class="grid lg:grid-cols-12 gap-8 items-start">
+                <article id="pericia-trabalhista" class="scroll-mt-24 bg-primary text-white rounded-2xl p-6 sm:p-10 shadow-md card-hover">
+                    <div class="grid lg:grid-cols-12 gap-6 sm:gap-8 items-start">
                         <div class="lg:col-span-7 space-y-4">
                             <div class="inline-flex items-center gap-3">
                                 <div class="w-12 h-12 bg-secondary text-primary rounded-lg flex items-center justify-center text-xl shrink-0" aria-hidden="true">
@@ -357,38 +357,38 @@
                                 <span class="text-xs font-bold uppercase tracking-wider text-secondary">Especialidade Técnica</span>
                             </div>
                             <h2 class="text-2xl sm:text-3xl font-bold text-white">Perícia Trabalhista</h2>
-                            <p class="text-gray-200 leading-relaxed">
+                            <p class="text-gray-200 leading-relaxed text-sm sm:text-base">
                                 Atuação especializada em cálculos trabalhistas e assistência técnica pericial para escritórios de advocacia e empresas em demandas judiciais ou extrajudiciais, garantindo fundamentação técnica sólida e precisa.
                             </p>
                             <div class="pt-2 flex flex-wrap gap-3">
-                                <a href="contato.html?servico=Per%C3%ADcia%20Trabalhista" class="bg-secondary hover:bg-secondary/90 text-primary px-6 py-3 rounded-md font-bold transition-all duration-300 inline-flex items-center gap-2 shadow-sm">
+                                <a href="contato.html?servico=Per%C3%ADcia%20Trabalhista" class="bg-secondary hover:bg-secondary/90 text-primary px-6 py-3 rounded-md font-bold transition-all duration-300 inline-flex items-center justify-center gap-2 shadow-sm w-full sm:w-auto">
                                     <span>Solicitar Assistência Técnica</span>
                                     <i class="fa-solid fa-arrow-right text-sm" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
 
-                        <div class="lg:col-span-5 bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/15">
+                        <div class="lg:col-span-5 bg-white/10 backdrop-blur-sm p-5 sm:p-6 rounded-xl border border-white/15">
                             <h3 class="text-sm font-bold uppercase tracking-wider text-secondary mb-4">O que está incluso:</h3>
                             <ul class="space-y-3 text-sm text-gray-100">
                                 <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-circle-check text-secondary mt-0.5" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-circle-check text-secondary mt-0.5 shrink-0" aria-hidden="true"></i>
                                     <span>Elaboração de cálculos iniciais e de liquidação de sentença</span>
                                 </li>
                                 <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-circle-check text-secondary mt-0.5" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-circle-check text-secondary mt-0.5 shrink-0" aria-hidden="true"></i>
                                     <span>Conferência e impugnação técnica de cálculos apresentados nos autos</span>
                                 </li>
                                 <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-circle-check text-secondary mt-0.5" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-circle-check text-secondary mt-0.5 shrink-0" aria-hidden="true"></i>
                                     <span>Atuação como Assistente Técnico em perícias judiciais</span>
                                 </li>
                                 <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-circle-check text-secondary mt-0.5" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-circle-check text-secondary mt-0.5 shrink-0" aria-hidden="true"></i>
                                     <span>Formulação de quesitos e emissão de pareceres técnicos fundamentados</span>
                                 </li>
                                 <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-circle-check text-secondary mt-0.5" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-circle-check text-secondary mt-0.5 shrink-0" aria-hidden="true"></i>
                                     <span>Apuração de reflexos, horas extras, adicionais, FGTS e encargos</span>
                                 </li>
                             </ul>
@@ -397,8 +397,8 @@
                 </article>
 
                 <!-- Serviço 5: Abertura e Regularização de Empresas -->
-                <article id="abertura-empresas" class="scroll-mt-24 bg-light rounded-2xl p-8 sm:p-10 border border-gray-100 shadow-sm card-hover">
-                    <div class="grid lg:grid-cols-12 gap-8 items-start">
+                <article id="abertura-empresas" class="scroll-mt-24 bg-light rounded-2xl p-6 sm:p-10 border border-gray-100 shadow-sm card-hover">
+                    <div class="grid lg:grid-cols-12 gap-6 sm:gap-8 items-start">
                         <div class="lg:col-span-7 space-y-4">
                             <div class="inline-flex items-center gap-3">
                                 <div class="w-12 h-12 bg-secondary/20 text-secondary-text rounded-lg flex items-center justify-center text-xl shrink-0" aria-hidden="true">
@@ -407,38 +407,38 @@
                                 <span class="text-xs font-bold uppercase tracking-wider text-secondary-text">Legalização Societária</span>
                             </div>
                             <h2 class="text-2xl sm:text-3xl font-bold text-primary">Abertura e Regularização de Empresas</h2>
-                            <p class="text-gray-700 leading-relaxed">
+                            <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
                                 Cuidamos de toda a parte burocrática para abrir, alterar ou regularizar o seu CNPJ junto à Junta Comercial, Receita Federal, Estado e Prefeitura — orientando desde a escolha do tipo societário até os alvarás necessários.
                             </p>
                             <div class="pt-2 flex flex-wrap gap-3">
-                                <a href="contato.html?servico=Abertura%20e%20Regulariza%C3%A7%C3%A3o%20de%20Empresas" class="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-md font-medium transition-all duration-300 inline-flex items-center gap-2 shadow-sm">
+                                <a href="contato.html?servico=Abertura%20e%20Regulariza%C3%A7%C3%A3o%20de%20Empresas" class="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-md font-medium transition-all duration-300 inline-flex items-center justify-center gap-2 shadow-sm w-full sm:w-auto">
                                     <span>Abrir ou Regularizar Empresa</span>
                                     <i class="fa-solid fa-arrow-right text-sm" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
 
-                        <div class="lg:col-span-5 bg-white p-6 rounded-xl border border-gray-100">
+                        <div class="lg:col-span-5 bg-white p-5 sm:p-6 rounded-xl border border-gray-100">
                             <h3 class="text-sm font-bold uppercase tracking-wider text-primary mb-4">O que está incluso:</h3>
                             <ul class="space-y-3 text-sm text-gray-700">
                                 <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5 shrink-0" aria-hidden="true"></i>
                                     <span>Estudo de viabilidade, CNAEs e escolha do melhor formato jurídico (SLU, LTDA, etc.)</span>
                                 </li>
                                 <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5 shrink-0" aria-hidden="true"></i>
                                     <span>Elaboração de contrato social, alterações contratuais e distrato</span>
                                 </li>
                                 <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5 shrink-0" aria-hidden="true"></i>
                                     <span>Registros na JUCERJA, Receita Federal, SEFAZ e Prefeitura</span>
                                 </li>
                                 <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5 shrink-0" aria-hidden="true"></i>
                                     <span>Transformação de MEI para Microempresa (ME) com segurança</span>
                                 </li>
                                 <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5 shrink-0" aria-hidden="true"></i>
                                     <span>Regularização de pendências cadastrais e certidões negativas</span>
                                 </li>
                             </ul>
@@ -447,8 +447,8 @@
                 </article>
 
                 <!-- Serviço 6: Consultoria Empresarial e Gestão -->
-                <article id="consultoria" class="scroll-mt-24 bg-light rounded-2xl p-8 sm:p-10 border border-gray-100 shadow-sm card-hover">
-                    <div class="grid lg:grid-cols-12 gap-8 items-start">
+                <article id="consultoria" class="scroll-mt-24 bg-light rounded-2xl p-6 sm:p-10 border border-gray-100 shadow-sm card-hover">
+                    <div class="grid lg:grid-cols-12 gap-6 sm:gap-8 items-start">
                         <div class="lg:col-span-7 space-y-4">
                             <div class="inline-flex items-center gap-3">
                                 <div class="w-12 h-12 bg-secondary/20 text-secondary-text rounded-lg flex items-center justify-center text-xl shrink-0" aria-hidden="true">
@@ -457,38 +457,38 @@
                                 <span class="text-xs font-bold uppercase tracking-wider text-secondary-text">Estratégia e Crescimento</span>
                             </div>
                             <h2 class="text-2xl sm:text-3xl font-bold text-primary">Consultoria Empresarial e Gestão</h2>
-                            <p class="text-gray-700 leading-relaxed">
+                            <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
                                 Apoiamos sócios e gestores a estruturar processos administrativos, organizar o fluxo financeiro e interpretar indicadores reais de rentabilidade para crescer de forma sustentável e lucrativa.
                             </p>
                             <div class="pt-2 flex flex-wrap gap-3">
-                                <a href="contato.html?servico=Consultoria%20Empresarial" class="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-md font-medium transition-all duration-300 inline-flex items-center gap-2 shadow-sm">
+                                <a href="contato.html?servico=Consultoria%20Empresarial" class="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-md font-medium transition-all duration-300 inline-flex items-center justify-center gap-2 shadow-sm w-full sm:w-auto">
                                     <span>Solicitar Consultoria</span>
                                     <i class="fa-solid fa-arrow-right text-sm" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
 
-                        <div class="lg:col-span-5 bg-white p-6 rounded-xl border border-gray-100">
+                        <div class="lg:col-span-5 bg-white p-5 sm:p-6 rounded-xl border border-gray-100">
                             <h3 class="text-sm font-bold uppercase tracking-wider text-primary mb-4">O que está incluso:</h3>
                             <ul class="space-y-3 text-sm text-gray-700">
                                 <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5 shrink-0" aria-hidden="true"></i>
                                     <span>Análise de margem de lucro, ponto de equilíbrio e custos</span>
                                 </li>
                                 <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5 shrink-0" aria-hidden="true"></i>
                                     <span>Estruturação financeira e implantação de rotinas no Conta Azul</span>
                                 </li>
                                 <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5 shrink-0" aria-hidden="true"></i>
                                     <span>Separação patrimonial entre pessoa física e pessoa jurídica</span>
                                 </li>
                                 <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5 shrink-0" aria-hidden="true"></i>
                                     <span>Reuniões periódicas de acompanhamento de resultados</span>
                                 </li>
                                 <li class="flex items-start gap-2.5">
-                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-circle-check text-secondary-text mt-0.5 shrink-0" aria-hidden="true"></i>
                                     <span>Suporte na reorganização societária e expansão do negócio</span>
                                 </li>
                             </ul>
@@ -499,16 +499,16 @@
         </section>
 
         <!-- Segmentos e Regimes Atendidos -->
-        <section class="py-20 bg-light">
+        <section class="py-14 sm:py-20 bg-light">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-14">
-                    <span class="text-secondary-text font-semibold uppercase tracking-wider text-sm">Atendimento Personalizado</span>
-                    <h2 class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-primary mt-2">Segmentos que Atendemos</h2>
-                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Experiência prática nas exigências fiscais e trabalhistas de diferentes perfis de empresas (Simples Nacional, Lucro Presumido e Lucro Real).</p>
+                <div class="text-center mb-12 sm:mb-14">
+                    <span class="text-secondary-text font-semibold uppercase tracking-wider text-xs sm:text-sm">Atendimento Personalizado</span>
+                    <h2 class="text-[clamp(1.65rem,3vw,2.5rem)] font-bold text-primary mt-2">Segmentos que Atendemos</h2>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto text-sm sm:text-base">Experiência prática nas exigências fiscais e trabalhistas de diferentes perfis de empresas (Simples Nacional, Lucro Presumido e Lucro Real).</p>
                 </div>
 
                 <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div class="bg-white p-7 rounded-xl border border-gray-100 shadow-sm text-center card-hover">
+                    <div class="bg-white p-6 sm:p-7 rounded-xl border border-gray-100 shadow-sm text-center card-hover">
                         <div class="w-14 h-14 mx-auto bg-primary/10 text-primary rounded-full flex items-center justify-center text-2xl mb-4" aria-hidden="true">
                             <i class="fa-solid fa-user-tie"></i>
                         </div>
@@ -516,7 +516,7 @@
                         <p class="text-sm text-gray-600">Empresas de tecnologia, engenharia, consultorias, agências e representantes comerciais.</p>
                     </div>
 
-                    <div class="bg-white p-7 rounded-xl border border-gray-100 shadow-sm text-center card-hover">
+                    <div class="bg-white p-6 sm:p-7 rounded-xl border border-gray-100 shadow-sm text-center card-hover">
                         <div class="w-14 h-14 mx-auto bg-primary/10 text-primary rounded-full flex items-center justify-center text-2xl mb-4" aria-hidden="true">
                             <i class="fa-solid fa-stethoscope"></i>
                         </div>
@@ -524,7 +524,7 @@
                         <p class="text-sm text-gray-600">Médicos, dentistas, psicólogos, clínicas e laboratórios com foco em Fator R e equiparação.</p>
                     </div>
 
-                    <div class="bg-white p-7 rounded-xl border border-gray-100 shadow-sm text-center card-hover">
+                    <div class="bg-white p-6 sm:p-7 rounded-xl border border-gray-100 shadow-sm text-center card-hover">
                         <div class="w-14 h-14 mx-auto bg-primary/10 text-primary rounded-full flex items-center justify-center text-2xl mb-4" aria-hidden="true">
                             <i class="fa-solid fa-store"></i>
                         </div>
@@ -532,7 +532,7 @@
                         <p class="text-sm text-gray-600">Lojas físicas e e-commerce com controle de ICMS, substituição tributária e estoque.</p>
                     </div>
 
-                    <div class="bg-white p-7 rounded-xl border border-gray-100 shadow-sm text-center card-hover">
+                    <div class="bg-white p-6 sm:p-7 rounded-xl border border-gray-100 shadow-sm text-center card-hover">
                         <div class="w-14 h-14 mx-auto bg-primary/10 text-primary rounded-full flex items-center justify-center text-2xl mb-4" aria-hidden="true">
                             <i class="fa-solid fa-gavel"></i>
                         </div>
@@ -544,50 +544,50 @@
         </section>
 
         <!-- Perguntas Frequentes (FAQ) -->
-        <section class="py-20 bg-white">
+        <section class="py-14 sm:py-20 bg-white">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-                <div class="text-center mb-12">
-                    <span class="text-secondary-text font-semibold uppercase tracking-wider text-sm">Dúvidas Comuns</span>
-                    <h2 class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-primary mt-2">Perguntas Frequentes</h2>
+                <div class="text-center mb-10 sm:mb-12">
+                    <span class="text-secondary-text font-semibold uppercase tracking-wider text-xs sm:text-sm">Dúvidas Comuns</span>
+                    <h2 class="text-[clamp(1.65rem,3vw,2.5rem)] font-bold text-primary mt-2">Perguntas Frequentes</h2>
                 </div>
 
                 <div class="space-y-4">
-                    <details class="group bg-light rounded-xl border border-gray-200 p-6">
-                        <summary class="flex items-center justify-between cursor-pointer list-none font-bold text-primary text-lg">
+                    <details class="group bg-light rounded-xl border border-gray-200 p-5 sm:p-6">
+                        <summary class="flex items-center justify-between gap-4 cursor-pointer list-none font-bold text-primary text-base sm:text-lg">
                             <span>Já tenho contador. É difícil migrar minha empresa para a Falcontabil?</span>
-                            <i class="fa-solid fa-chevron-down text-sm text-secondary-text transition-transform duration-300 group-open:rotate-180" aria-hidden="true"></i>
+                            <i class="fa-solid fa-chevron-down text-sm text-secondary-text transition-transform duration-300 group-open:rotate-180 shrink-0" aria-hidden="true"></i>
                         </summary>
-                        <p class="text-gray-700 mt-4 leading-relaxed">
+                        <p class="text-gray-700 mt-4 leading-relaxed text-sm sm:text-base">
                             Não. Nossa equipe conduz todo o processo de transição diretamente com a contabilidade anterior, solicitando balancetes, livros e histórico do eSocial/Fiscal para que sua empresa não sofra nenhuma interrupção.
                         </p>
                     </details>
 
-                    <details class="group bg-light rounded-xl border border-gray-200 p-6">
-                        <summary class="flex items-center justify-between cursor-pointer list-none font-bold text-primary text-lg">
+                    <details class="group bg-light rounded-xl border border-gray-200 p-5 sm:p-6">
+                        <summary class="flex items-center justify-between gap-4 cursor-pointer list-none font-bold text-primary text-base sm:text-lg">
                             <span>Vocês atendem apenas empresas de Duque de Caxias?</span>
-                            <i class="fa-solid fa-chevron-down text-sm text-secondary-text transition-transform duration-300 group-open:rotate-180" aria-hidden="true"></i>
+                            <i class="fa-solid fa-chevron-down text-sm text-secondary-text transition-transform duration-300 group-open:rotate-180 shrink-0" aria-hidden="true"></i>
                         </summary>
-                        <p class="text-gray-700 mt-4 leading-relaxed">
+                        <p class="text-gray-700 mt-4 leading-relaxed text-sm sm:text-base">
                             Nossa sede fica em Duque de Caxias - RJ, mas atendemos presencialmente e de forma 100% digital empresas de toda a Baixada Fluminense, Rio de Janeiro e demais localidades.
                         </p>
                     </details>
 
-                    <details class="group bg-light rounded-xl border border-gray-200 p-6">
-                        <summary class="flex items-center justify-between cursor-pointer list-none font-bold text-primary text-lg">
+                    <details class="group bg-light rounded-xl border border-gray-200 p-5 sm:p-6">
+                        <summary class="flex items-center justify-between gap-4 cursor-pointer list-none font-bold text-primary text-base sm:text-lg">
                             <span>Preciso usar o sistema Conta Azul para ser cliente?</span>
-                            <i class="fa-solid fa-chevron-down text-sm text-secondary-text transition-transform duration-300 group-open:rotate-180" aria-hidden="true"></i>
+                            <i class="fa-solid fa-chevron-down text-sm text-secondary-text transition-transform duration-300 group-open:rotate-180 shrink-0" aria-hidden="true"></i>
                         </summary>
-                        <p class="text-gray-700 mt-4 leading-relaxed">
+                        <p class="text-gray-700 mt-4 leading-relaxed text-sm sm:text-base">
                             Não é obrigatório, mas como somos Parceiros Certificados Conta Azul, oferecemos condições e suporte na implantação caso queira automatizar seu controle financeiro e integrá-lo diretamente com nossa contabilidade.
                         </p>
                     </details>
 
-                    <details class="group bg-light rounded-xl border border-gray-200 p-6">
-                        <summary class="flex items-center justify-between cursor-pointer list-none font-bold text-primary text-lg">
+                    <details class="group bg-light rounded-xl border border-gray-200 p-5 sm:p-6">
+                        <summary class="flex items-center justify-between gap-4 cursor-pointer list-none font-bold text-primary text-base sm:text-lg">
                             <span>Como contratar os serviços de Perícia Trabalhista?</span>
-                            <i class="fa-solid fa-chevron-down text-sm text-secondary-text transition-transform duration-300 group-open:rotate-180" aria-hidden="true"></i>
+                            <i class="fa-solid fa-chevron-down text-sm text-secondary-text transition-transform duration-300 group-open:rotate-180 shrink-0" aria-hidden="true"></i>
                         </summary>
-                        <p class="text-gray-700 mt-4 leading-relaxed">
+                        <p class="text-gray-700 mt-4 leading-relaxed text-sm sm:text-base">
                             Basta clicar em "Solicitar Assistência Técnica" ou falar pelo nosso WhatsApp informando o tipo de demanda (cálculo inicial, liquidação, impugnação ou parecer) e o prazo processual para enviarmos uma proposta ágil.
                         </p>
                     </details>
@@ -596,18 +596,18 @@
         </section>
 
         <!-- Chamada para Ação (CTA) -->
-        <section class="py-16 bg-primary text-white">
+        <section class="py-14 sm:py-16 bg-primary text-white">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex flex-col lg:flex-row items-center justify-between gap-8">
                     <div class="max-w-2xl text-center lg:text-left">
                         <h2 class="text-[clamp(1.5rem,3vw,2.25rem)] font-bold text-white">
                             Precisa de uma proposta personalizada para a sua empresa?
                         </h2>
-                        <p class="text-gray-200 mt-3 text-lg">
+                        <p class="text-gray-200 mt-3 text-base sm:text-lg">
                             Fale com a equipe da Falcontabil e receba um atendimento consultivo sob medida.
                         </p>
                     </div>
-                    <div class="flex flex-col sm:flex-row gap-4 shrink-0">
+                    <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto shrink-0">
                         <a href="contato.html" class="bg-secondary hover:bg-secondary/90 text-primary font-bold px-8 py-3.5 rounded-md text-center transition-all duration-300 shadow-md">
                             Solicitar Orçamento
                         </a>
@@ -621,7 +621,7 @@
     </main>
 
     <!-- Rodapé -->
-    <footer class="bg-primary text-white pt-16 pb-20 sm:pb-10 border-t border-white/15">
+    <footer class="bg-primary text-white pt-14 sm:pt-16 pb-24 sm:pb-10 border-t border-white/15">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/15">
                 <div class="space-y-4">
@@ -680,26 +680,26 @@
                     <h4 class="text-lg font-semibold mb-4 text-secondary">Contato</h4>
                     <ul class="space-y-3 text-sm text-gray-300">
                         <li class="flex items-start gap-2.5">
-                            <i class="fa-solid fa-location-dot text-secondary mt-1" aria-hidden="true"></i>
+                            <i class="fa-solid fa-location-dot text-secondary mt-1 shrink-0" aria-hidden="true"></i>
                             <span>Centro, Duque de Caxias - RJ</span>
                         </li>
                         <li class="flex items-start gap-2.5">
-                            <i class="fa-brands fa-whatsapp text-secondary mt-1" aria-hidden="true"></i>
+                            <i class="fa-brands fa-whatsapp text-secondary mt-1 shrink-0" aria-hidden="true"></i>
                             <a data-whatsapp-link data-whatsapp-text href="https://wa.me/5521967588822" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">+55 (21) 96758-8822</a>
                         </li>
                         <li class="flex items-start gap-2.5">
-                            <i class="fa-regular fa-envelope text-secondary mt-1" aria-hidden="true"></i>
+                            <i class="fa-regular fa-envelope text-secondary mt-1 shrink-0" aria-hidden="true"></i>
                             <a data-email-link href="mailto:contato@e-falcontabil.com.br" class="hover:text-white transition-colors break-all">contato@e-falcontabil.com.br</a>
                         </li>
                         <li class="flex items-start gap-2.5">
-                            <i class="fa-regular fa-clock text-secondary mt-1" aria-hidden="true"></i>
+                            <i class="fa-regular fa-clock text-secondary mt-1 shrink-0" aria-hidden="true"></i>
                             <span>Seg a Sex: 08h30 às 17h30</span>
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-300 gap-4">
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-300 gap-4 text-center sm:text-left">
                 <p>&copy; <span data-current-year>2026</span> E-Falcontabil Serviços Contábeis Ltda. Todos os direitos reservados.</p>
                 <p>Duque de Caxias - RJ • Atendimento Consultivo e Digital</p>
             </div>
@@ -714,12 +714,31 @@
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Falar com a Falcontabil pelo WhatsApp"
-        class="fixed bottom-5 right-5 z-40 w-14 h-14 bg-green-600 hover:bg-green-700 text-white rounded-full shadow-xl flex items-center justify-center text-2xl transition-all duration-300 hover:scale-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-600 focus-visible:ring-offset-2"
+        class="fixed bottom-4 right-4 sm:bottom-5 sm:right-5 z-40 w-12 h-12 sm:w-14 sm:h-14 bg-green-600 hover:bg-green-700 text-white rounded-full shadow-xl flex items-center justify-center text-2xl transition-all duration-300 hover:scale-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-600 focus-visible:ring-offset-2"
     >
         <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
     </a>
 
     <!-- Scripts Compartilhados -->
     <script src="js/script.js" defer></script>
+
+    <!-- Garantia extra para o Menu Mobile caso o arquivo externo demore ou falhe -->
+    <script>
+        window.addEventListener('load', function () {
+            if (window.__falcontabilInitialized) return;
+            var menuBtn = document.getElementById('menuBtn');
+            var menuIcon = document.getElementById('menuIcon');
+            var mobileMenu = document.getElementById('mobileMenu');
+            if (!menuBtn || !mobileMenu) return;
+            menuBtn.addEventListener('click', function () {
+                var isHidden = mobileMenu.classList.toggle('hidden');
+                menuBtn.setAttribute('aria-expanded', String(!isHidden));
+                if (menuIcon) {
+                    menuIcon.classList.toggle('fa-bars', isHidden);
+                    menuIcon.classList.toggle('fa-xmark', !isHidden);
+                }
+            });
+        });
+    </script>
 </body>
 </html>
