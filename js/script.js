@@ -1,23 +1,20 @@
 /**
  * FALCONTABIL - SCRIPTS GLOBAIS COMPARTILHADOS (ES6+)
- * Módulos:
- * 1. Configurações Centrais (WhatsApp, E-mail, Endpoint)
- * 2. Navbar Dinâmica e Menu Mobile Acessível
- * 3. Pré-seleção de Serviço (via URL ou clique em card)
- * 4. Formulário com Máscara, Validação em Tempo Real e Envio Real
- * 5. Galeria de Fotos com Filtros e Lightbox Modal
  */
 (() => {
     'use strict';
 
+    if (window.__falcontabilInitialized) return;
+    window.__falcontabilInitialized = true;
+
     /* ======================================================================
-       1. CONFIGURAÇÃO CENTRAL DA EMPRESA (Edite apenas aqui para todo o site)
+       1. CONFIGURAÇÃO CENTRAL DA EMPRESA
        ====================================================================== */
     const FALCONTABIL_CONFIG = {
-        whatsappNumber: '5521967588822', // DDI (55) + DDD (21) + Número sem espaços
-        whatsappDisplay: '(21) 96758-8822',
-        emailDestino: 'falcontabil@gmail.com',
-        formEndpoint: '' // Opcional: Ex. 'https://formspree.io/f/seu-codigo'
+        whatsappNumber: '5521967588822',
+        whatsappDisplay: '+55 (21) 96758-8822',
+        emailDestino: 'contato@e-falcontabil.com.br',
+        formEndpoint: ''
     };
 
     const syncGlobalContactLinks = () => {
@@ -86,10 +83,15 @@
             }
         };
 
-        menuBtn.addEventListener('click', () => toggleMobileMenu());
+        menuBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            toggleMobileMenu();
+        });
 
         mobileMenu.querySelectorAll('a').forEach((link) => {
-            link.addEventListener('click', () => toggleMobileMenu(true));
+            link.addEventListener('click', () => {
+                toggleMobileMenu(true);
+            });
         });
 
         document.addEventListener('keydown', (e) => {
@@ -101,13 +103,12 @@
     };
 
     /* ======================================================================
-       3. PRÉ-SELEÇÃO DE SERVIÇO (POR QUERY STRING ?servico=... OU CTA LOCAL)
+       3. PRÉ-SELEÇÃO DE SERVIÇO (?servico=... OU CLIQUE LOCAL)
        ====================================================================== */
     const initServicePreselection = () => {
         const servicoSelect = document.getElementById('servico');
         if (!servicoSelect) return;
 
-        // Via URL (ex: contato.html?servico=Perícia%20Trabalhista)
         const params = new URLSearchParams(window.location.search);
         const serviceFromUrl = params.get('servico');
         if (serviceFromUrl) {
@@ -119,7 +120,6 @@
             }
         }
 
-        // Via clique em cards na mesma página
         document.querySelectorAll('.service-cta').forEach((cta) => {
             cta.addEventListener('click', () => {
                 const selectedService = cta.getAttribute('data-service');
@@ -131,7 +131,7 @@
     };
 
     /* ======================================================================
-       4. FORMULÁRIO DE CONTATO COM VALIDAÇÃO EM TEMPO REAL E ENVIO REAL
+       4. FORMULÁRIO DE CONTATO COM VALIDAÇÃO EM TEMPO REAL
        ====================================================================== */
     const initContactForm = () => {
         const contactForm = document.getElementById('contactForm');
@@ -344,7 +344,7 @@
     };
 
     /* ======================================================================
-       5. GALERIA DE FOTOS COM FILTROS E LIGHTBOX MODAL (PÁGINA SOBRE NÓS)
+       5. GALERIA DE FOTOS COM FILTROS E LIGHTBOX MODAL (SOBRE NÓS)
        ====================================================================== */
     const initGalleryAndLightbox = () => {
         const galleryGrid = document.getElementById('galleryGrid');
@@ -449,13 +449,19 @@
     };
 
     /* ======================================================================
-       INICIALIZAÇÃO
+       INICIALIZAÇÃO GARANTIDA (COM OU SEM DEFER)
        ====================================================================== */
-    document.addEventListener('DOMContentLoaded', () => {
+    const initAll = () => {
         syncGlobalContactLinks();
         initNavigation();
         initServicePreselection();
         initContactForm();
         initGalleryAndLightbox();
-    });
+    };
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initAll);
+    } else {
+        initAll();
+    }
 })();
