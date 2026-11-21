@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falcontabil | Contabilidade, Consultoria e Perícia em Duque de Caxias</title>
+    <meta name="description" content="Escritório de Contabilidade com mais de 35 anos de experiência em Duque de Caxias - RJ. Consultoria Empresarial, Departamento Pessoal, Área Fiscal e Perícia Trabalhista.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0B2B5C">
+    <link rel="canonical" href="https://e-falcontabil.com.br/">
+
+    <!-- Open Graph / Compartilhamento Social (WhatsApp, LinkedIn, Facebook) -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Falcontabil">
+    <meta property="og:title" content="Falcontabil | Contabilidade, Consultoria e Perícia em Duque de Caxias">
+    <meta property="og:description" content="Mais de 35 anos de tradição oferecendo soluções completas em Contabilidade, Fiscal, Departamento Pessoal e Perícia Trabalhista.">
+    <meta property="og:url" content="https://e-falcontabil.com.br/">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Falcontabil | Contabilidade em Duque de Caxias - RJ">
+    <meta name="twitter:description" content="Soluções contábeis, fiscais, trabalhistas e consultoria empresarial com mais de 35 anos de mercado.">
+
+    <!-- Favicon SVG Inline -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230B2B5C'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial, sans-serif' font-weight='bold' font-size='34' fill='%23D4A017'%3EF%3C/text%3E%3C/svg%3E">
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Ícones Font Awesome 6.5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0B2B5C',
+                        secondary: '#D4A017',
+                        'secondary-text': '#8A6200',
+                        dark: '#1F2937',
+                        light: '#F3F4F6',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- Design System e Estilos Globais Compartilhados -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Dados Estruturados para SEO Local (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AccountingService",
+        "name": "Falcontabil - E-Falcontabil Serviços Contábeis Ltda",
+        "url": "https://e-falcontabil.com.br/",
+        "telephone": "+55-21-96758-8822",
+        "description": "Escritório de Contabilidade com mais de 35 anos de experiência em Duque de Caxias - RJ. Contabilidade Geral, Consultoria Empresarial, Departamento Pessoal, Área Fiscal e Perícia Trabalhista.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Duque de Caxias",
+            "addressRegion": "RJ",
+            "addressCountry": "BR"
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": "Duque de Caxias"
+        },
+        "openingHours": "Mo-Fr 08:30-17:30",
+        "sameAs": [
+            "https://instagram.com/efalcontabil",
+            "https://e-falcontabil.com.br"
+        ]
+    }
+    </script>
+</head>
+<body class="font-sans text-dark antialiased selection:bg-primary selection:text-white">
+    <!-- Link de Acessibilidade para Navegação por Teclado -->
+    <a href="#conteudo-principal" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[60] focus:bg-primary focus:text-white focus:px-4 focus:py-2 focus:rounded-md focus:shadow-lg">
+        Pular para o conteúdo principal
+    </a>
+
+    <!-- Navegação -->
+    <header id="navbar" class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-sm shadow-sm">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="text-2xl font-bold text-primary flex items-center rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary" aria-label="Falcontabil - Ir para a página inicial">
+                    <span class="text-secondary mr-1.5" aria-hidden="true">✦</span>Falcontabil
+                </a>
+
+                <!-- Menu Desktop -->
+                <nav class="hidden lg:flex items-center space-x-7" aria-label="Navegação principal">
+                    <a href="index.html" aria-current="page" class="text-primary font-semibold border-b-2 border-secondary pb-0.5 transition-colors duration-300">Início</a>
+                    <a href="diferenciais.html" class="text-dark hover:text-primary font-medium transition-colors duration-300">Diferenciais</a>
+                    <a href="servicos.html" class="text-dark hover:text-primary font-medium transition-colors duration-300">Serviços</a>
+                    <a href="sobre.html" class="text-dark hover:text-primary font-medium transition-colors duration-300">Sobre Nós</a>
+                    <a href="contato.html" class="text-dark hover:text-primary font-medium transition-colors duration-300">Contato</a>
+                    <a href="contato.html" class="bg-primary hover:bg-primary/90 text-white px-5 py-2.5 rounded-md font-medium transition-all duration-300 shadow-sm hover:shadow-md">
+                        Solicitar Orçamento
+                    </a>
+                </nav>
+
+                <!-- Botão Mobile -->
+                <button
+                    id="menuBtn"
+                    type="button"
+                    aria-label="Abrir menu de navegação"
+                    aria-expanded="false"
+                    aria-controls="mobileMenu"
+                    class="lg:hidden text-dark text-2xl p-2 rounded-md hover:bg-gray-100 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                >
+                    <i id="menuIcon" class="fa-solid fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu Mobile -->
+        <nav id="mobileMenu" aria-label="Navegação mobile" class="lg:hidden hidden bg-white border-t border-gray-100 shadow-lg">
+            <div class="container mx-auto px-4 py-4 flex flex-col space-y-2">
+                <a href="index.html" aria-current="page" class="mobile-nav-link text-primary bg-primary/5 px-3 py-2.5 rounded-md font-semibold">Início</a>
+                <a href="diferenciais.html" class="mobile-nav-link text-dark hover:text-primary hover:bg-gray-50 px-3 py-2.5 rounded-md font-medium transition-colors">Diferenciais</a>
+                <a href="servicos.html" class="mobile-nav-link text-dark hover:text-primary hover:bg-gray-50 px-3 py-2.5 rounded-md font-medium transition-colors">Serviços</a>
+                <a href="sobre.html" class="mobile-nav-link text-dark hover:text-primary hover:bg-gray-50 px-3 py-2.5 rounded-md font-medium transition-colors">Sobre Nós</a>
+                <a href="contato.html" class="mobile-nav-link text-dark hover:text-primary hover:bg-gray-50 px-3 py-2.5 rounded-md font-medium transition-colors">Contato</a>
+                <a href="contato.html" class="mobile-nav-link bg-primary hover:bg-primary/90 text-white py-3 mt-2 rounded-md text-center font-medium transition-colors">
+                    Solicitar Orçamento
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="conteudo-principal">
+        <!-- Seção Hero -->
+        <section id="inicio" class="pt-32 pb-20 md:pb-24 bg-gradient-to-br from-primary/5 via-white to-primary/10">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2 space-y-6">
+                        <div class="inline-flex items-center gap-2 bg-primary/10 text-primary text-sm font-semibold px-4 py-1.5 rounded-full">
+                            <i class="fa-solid fa-award text-secondary-text" aria-hidden="true"></i>
+                            <span>Mais de 35 anos de tradição no mercado</span>
+                        </div>
+
+                        <h1 class="text-[clamp(2.25rem,4.5vw,3.75rem)] font-bold text-primary leading-tight">
+                            Sua Contabilidade em <span class="text-secondary-text">Boas Mãos</span>
+                        </h1>
+
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            Soluções completas em Contabilidade, Consultoria Empresarial, Departamento Pessoal, Área Fiscal e Perícia Trabalhista em Duque de Caxias e região. Segurança, ética e resultados para o seu negócio.
+                        </p>
+
+                        <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                            <a href="contato.html" class="bg-primary hover:bg-primary/90 text-white px-8 py-3.5 rounded-md font-medium text-center transition-all duration-300 shadow-md hover:shadow-lg">
+                                Fale Conosco
+                            </a>
+                            <a href="servicos.html" class="border-2 border-primary text-primary hover:bg-primary/5 px-8 py-3.5 rounded-md font-medium text-center transition-all duration-300">
+                                Conhecer Serviços
+                            </a>
+                        </div>
+
+                        <div class="flex flex-wrap items-center gap-3 pt-2">
+                            <span class="bg-green-100 text-green-900 text-sm font-medium px-3.5 py-1.5 rounded-full inline-flex items-center">
+                                <i class="fa-solid fa-circle-check mr-1.5 text-green-700" aria-hidden="true"></i> Parceiro Certificado Conta Azul
+                            </span>
+                            <span class="bg-blue-50 text-primary text-sm font-medium px-3.5 py-1.5 rounded-full inline-flex items-center">
+                                <i class="fa-solid fa-location-dot mr-1.5 text-secondary-text" aria-hidden="true"></i> Duque de Caxias - RJ
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="md:w-1/2 w-full">
+                        <div class="relative">
+                            <img
+                                src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80"
+                                alt="Equipe de especialistas em contabilidade analisando demonstrativos financeiros da Falcontabil"
+                                width="800"
+                                height="533"
+                                fetchpriority="high"
+                                decoding="async"
+                                class="w-full h-auto aspect-[3/2] rounded-xl shadow-2xl object-cover"
+                            >
+                            <div class="hidden sm:block absolute -bottom-6 -left-6 bg-white p-5 rounded-xl shadow-xl border border-gray-100">
+                                <p class="text-3xl font-bold text-primary">+35 Anos</p>
+                                <p class="text-sm text-gray-600 font-medium">De experiência e credibilidade</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Diferenciais (Resumo na Home + Link para página completa) -->
+        <section id="diferenciais" class="py-20 bg-white scroll-mt-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <span class="text-secondary-text font-semibold uppercase tracking-wider text-sm">Compromisso e Excelência</span>
+                    <h2 class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-primary mt-2">Por que escolher a Falcontabil?</h2>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Mais do que um escritório de contabilidade tradicional, somos o parceiro estratégico que seu empreendimento precisa para crescer com segurança.</p>
+                </div>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <article class="bg-light p-8 rounded-xl card-hover border border-gray-100">
+                        <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center text-primary text-2xl mb-6" aria-hidden="true">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-primary mb-3">Segurança e Zelo</h3>
+                        <p class="text-gray-600">Dados protegidos, responsabilidade técnica e processos rigorosos para sua total tranquilidade.</p>
+                    </article>
+
+                    <article class="bg-light p-8 rounded-xl card-hover border border-gray-100">
+                        <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center text-primary text-2xl mb-6" aria-hidden="true">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-primary mb-3">Praticidade e Agilidade</h3>
+                        <p class="text-gray-600">Integração digital com sistemas modernos e respostas rápidas para otimizar sua rotina.</p>
+                    </article>
+
+                    <article class="bg-light p-8 rounded-xl card-hover border border-gray-100">
+                        <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center text-primary text-2xl mb-6" aria-hidden="true">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-primary mb-3">Equipe Especializada</h3>
+                        <p class="text-gray-600">Profissionais experientes e constantemente atualizados com a legislação fiscal e trabalhista.</p>
+                    </article>
+
+                    <article class="bg-light p-8 rounded-xl card-hover border border-gray-100">
+                        <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center text-primary text-2xl mb-6" aria-hidden="true">
+                            <i class="fa-regular fa-handshake"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-primary mb-3">Ética e Transparência</h3>
+                        <p class="text-gray-600">Conduta íntegra, respeito e comunicação clara em cada etapa do relacionamento.</p>
+                    </article>
+                </div>
+
+                <div class="text-center mt-12">
+                    <a href="diferenciais.html" class="inline-flex items-center gap-2 text-primary font-semibold hover:text-secondary-text transition-colors">
+                        <span>Ver todos os nossos diferenciais</span>
+                        <i class="fa-solid fa-arrow-right text-sm" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Serviços (Resumo na Home + Direcionamento para Contato e Página de Serviços) -->
+        <section id="servicos" class="py-20 bg-light scroll-mt-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <span class="text-secondary-text font-semibold uppercase tracking-wider text-sm">Áreas de Atuação</span>
+                    <h2 class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-primary mt-2">Nossos Serviços</h2>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Soluções completas sob medida para empresas, prestadores de serviços e organizações de diversos segmentos.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <article class="bg-white p-8 rounded-xl shadow-sm card-hover border border-gray-100 flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 bg-secondary/15 text-secondary-text rounded-lg flex items-center justify-center text-xl mb-5" aria-hidden="true">
+                                <i class="fa-solid fa-calculator"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-primary mb-3">Contabilidade Geral</h3>
+                            <p class="text-gray-600 mb-6">Escrituração contábil completa, balanços patrimoniais, DRE e relatórios gerenciais precisos para tomada de decisão segura.</p>
+                        </div>
+                        <a href="contato.html?servico=Contabilidade%20Geral" class="text-secondary-text font-semibold hover:underline inline-flex items-center">
+                            Solicitar atendimento <i class="fa-solid fa-arrow-right ml-2 text-sm" aria-hidden="true"></i>
+                        </a>
+                    </article>
+
+                    <article class="bg-white p-8 rounded-xl shadow-sm card-hover border border-gray-100 flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 bg-secondary/15 text-secondary-text rounded-lg flex items-center justify-center text-xl mb-5" aria-hidden="true">
+                                <i class="fa-regular fa-file-lines"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-primary mb-3">Assessoria Fiscal e Tributária</h3>
+                            <p class="text-gray-600 mb-6">Planejamento tributário estratégico, apuração de impostos e entrega de obrigações acessórias com total conformidade legal.</p>
+                        </div>
+                        <a href="contato.html?servico=Assessoria%20Fiscal%20e%20Tribut%C3%A1ria" class="text-secondary-text font-semibold hover:underline inline-flex items-center">
+                            Solicitar atendimento <i class="fa-solid fa-arrow-right ml-2 text-sm" aria-hidden="true"></i>
+                        </a>
+                    </article>
+
+                    <article class="bg-white p-8 rounded-xl shadow-sm card-hover border border-gray-100 flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 bg-secondary/15 text-secondary-text rounded-lg flex items-center justify-center text-xl mb-5" aria-hidden="true">
+                                <i class="fa-regular fa-id-card"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-primary mb-3">Departamento Pessoal e RH</h3>
+                            <p class="text-gray-600 mb-6">Gestão completa de folha de pagamento, admissões, rescisões, encargos sociais e envio rigoroso dos eventos do eSocial.</p>
+                        </div>
+                        <a href="contato.html?servico=Departamento%20Pessoal%20e%20RH" class="text-secondary-text font-semibold hover:underline inline-flex items-center">
+                            Solicitar atendimento <i class="fa-solid fa-arrow-right ml-2 text-sm" aria-hidden="true"></i>
+                        </a>
+                    </article>
+
+                    <article class="bg-white p-8 rounded-xl shadow-sm card-hover border border-gray-100 flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 bg-secondary/15 text-secondary-text rounded-lg flex items-center justify-center text-xl mb-5" aria-hidden="true">
+                                <i class="fa-solid fa-scale-balanced"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-primary mb-3">Perícia Trabalhista</h3>
+                            <p class="text-gray-600 mb-6">Elaboração de cálculos trabalhistas, pareceres técnicos e assistência especializada para processos e demandas judiciais.</p>
+                        </div>
+                        <a href="contato.html?servico=Per%C3%ADcia%20Trabalhista" class="text-secondary-text font-semibold hover:underline inline-flex items-center">
+                            Solicitar atendimento <i class="fa-solid fa-arrow-right ml-2 text-sm" aria-hidden="true"></i>
+                        </a>
+                    </article>
+
+                    <article class="bg-white p-8 rounded-xl shadow-sm card-hover border border-gray-100 flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 bg-secondary/15 text-secondary-text rounded-lg flex items-center justify-center text-xl mb-5" aria-hidden="true">
+                                <i class="fa-regular fa-building"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-primary mb-3">Abertura e Regularização</h3>
+                            <p class="text-gray-600 mb-6">Constituição, alteração contratual, baixa e regularização de empresas — cuidamos de todo o trâmite junto aos órgãos públicos.</p>
+                        </div>
+                        <a href="contato.html?servico=Abertura%20e%20Regulariza%C3%A7%C3%A3o%20de%20Empresas" class="text-secondary-text font-semibold hover:underline inline-flex items-center">
+                            Solicitar atendimento <i class="fa-solid fa-arrow-right ml-2 text-sm" aria-hidden="true"></i>
+                        </a>
+                    </article>
+
+                    <article class="bg-white p-8 rounded-xl shadow-sm card-hover border border-gray-100 flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 bg-secondary/15 text-secondary-text rounded-lg flex items-center justify-center text-xl mb-5" aria-hidden="true">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-primary mb-3">Consultoria Empresarial e Gestão</h3>
+                            <p class="text-gray-600 mb-6">Apoio administrativo e financeiro, análise de resultados, fluxo de caixa e planejamento para crescimento sustentável.</p>
+                        </div>
+                        <a href="contato.html?servico=Consultoria%20Empresarial" class="text-secondary-text font-semibold hover:underline inline-flex items-center">
+                            Solicitar atendimento <i class="fa-solid fa-arrow-right ml-2 text-sm" aria-hidden="true"></i>
+                        </a>
+                    </article>
+                </div>
+
+                <div class="text-center mt-12">
+                    <a href="servicos.html" class="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white px-7 py-3.5 rounded-md font-medium transition-all duration-300 shadow-sm hover:shadow-md">
+                        <span>Ver detalhes completos dos serviços</span>
+                        <i class="fa-solid fa-arrow-right text-sm" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre Nós (Resumo na Home + Link para sobre.html) -->
+        <section id="sobre" class="py-20 bg-white scroll-mt-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+                    <div class="lg:w-2/5 w-full">
+                        <img
+                            src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80"
+                            alt="Ambiente corporativo moderno do escritório Falcontabil em Duque de Caxias"
+                            width="600"
+                            height="400"
+                            loading="lazy"
+                            decoding="async"
+                            class="w-full h-auto aspect-[3/2] rounded-xl shadow-lg object-cover"
+                        >
+                    </div>
+                    <div class="lg:w-3/5 space-y-6">
+                        <span class="text-secondary-text font-semibold uppercase tracking-wider text-sm">Nossa História e Cultura</span>
+                        <h2 class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-primary">Sobre a Falcontabil</h2>
+                        <p class="text-gray-700 leading-relaxed">
+                            Com mais de <strong>35 anos de atuação no mercado</strong>, a <strong>Falcontabil</strong> (<em>E-Falcontabil Serviços Contábeis Ltda</em>) consolida-se como referência em contabilidade e consultoria empresarial.
+                        </p>
+                        <p class="text-gray-700 leading-relaxed">
+                            Além dos serviços realizados por um escritório contábil tradicional, procuramos compreender as particularidades do seu segmento de atuação e buscamos soluções consistentes para uma conduta administrativa eficaz e de melhoria contínua de resultados.
+                        </p>
+                        <p class="text-gray-700 leading-relaxed">
+                            Nossa cultura é fundamentada em <strong>praticidade, comprometimento, responsabilidade, ética, respeito, zelo e transparência</strong>. Entendemos que o maior ativo de um empreendimento são as pessoas que nele atuam.
+                        </p>
+                        <div class="grid sm:grid-cols-2 gap-4 pt-2">
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-circle-check text-secondary-text text-lg mt-0.5" aria-hidden="true"></i>
+                                <span class="text-gray-700 font-medium">Atendimento consultivo e personalizado</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-circle-check text-secondary-text text-lg mt-0.5" aria-hidden="true"></i>
+                                <span class="text-gray-700 font-medium">Mais de 35 anos de experiência</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-circle-check text-secondary-text text-lg mt-0.5" aria-hidden="true"></i>
+                                <span class="text-gray-700 font-medium">Parceiro Certificado Conta Azul</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-circle-check text-secondary-text text-lg mt-0.5" aria-hidden="true"></i>
+                                <span class="text-gray-700 font-medium">Especialistas em Perícia Trabalhista</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-4">
+                            <a href="sobre.html" class="inline-flex items-center gap-2 border-2 border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-md font-semibold transition-all duration-300">
+                                <span>Conheça nossa história e galeria de fotos</span>
+                                <i class="fa-solid fa-arrow-right text-sm" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prova Social / Depoimentos -->
+        <section id="depoimentos" class="py-20 bg-primary text-white scroll-mt-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <span class="text-secondary font-semibold uppercase tracking-wider text-sm">Confiança Comprovada</span>
+                    <h2 class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-white mt-2">O que nossos clientes dizem</h2>
+                    <p class="text-gray-200 mt-4 max-w-2xl mx-auto">Relacionamentos duradouros construídos com agilidade no atendimento, rigor técnico e transparência.</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <blockquote class="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/15 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="flex text-secondary gap-1" aria-label="Avaliação 5 de 5 estrelas">
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                </div>
+                                <i class="fa-solid fa-quote-left text-secondary/50 text-2xl" aria-hidden="true"></i>
+                            </div>
+                            <p class="text-gray-100 leading-relaxed mb-6">
+                                "A transição para a Falcontabil trouxe clareza imediata para os nossos números. A equipe resolve questões fiscais e de folha com uma agilidade impressionante."
+                            </p>
+                        </div>
+                        <footer class="border-t border-white/15 pt-4">
+                            <p class="font-semibold text-white">Carlos Eduardo Mendes</p>
+                            <p class="text-sm text-gray-300">Diretor Comercial • Setor de Serviços</p>
+                        </footer>
+                    </blockquote>
+
+                    <blockquote class="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/15 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="flex text-secondary gap-1" aria-label="Avaliação 5 de 5 estrelas">
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                </div>
+                                <i class="fa-solid fa-quote-left text-secondary/50 text-2xl" aria-hidden="true"></i>
+                            </div>
+                            <p class="text-gray-100 leading-relaxed mb-6">
+                                "O suporte na integração com o Conta Azul e o planejamento tributário nos ajudaram a organizar o fluxo de caixa e pagar apenas os impostos devidos."
+                            </p>
+                        </div>
+                        <footer class="border-t border-white/15 pt-4">
+                            <p class="font-semibold text-white">Fernanda Almeida</p>
+                            <p class="text-sm text-gray-300">Sócia-Proprietária • Clínica Integrada</p>
+                        </footer>
+                    </blockquote>
+
+                    <blockquote class="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/15 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="flex text-secondary gap-1" aria-label="Avaliação 5 de 5 estrelas">
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                </div>
+                                <i class="fa-solid fa-quote-left text-secondary/50 text-2xl" aria-hidden="true"></i>
+                            </div>
+                            <p class="text-gray-100 leading-relaxed mb-6">
+                                "Precisávamos de assistência técnica em perícia trabalhista e encontramos extremo rigor nos cálculos e transparência total em cada etapa."
+                            </p>
+                        </div>
+                        <footer class="border-t border-white/15 pt-4">
+                            <p class="font-semibold text-white">Dr. Roberto Vasconcelos</p>
+                            <p class="text-sm text-gray-300">Advogado Trabalhista • Duque de Caxias</p>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-primary text-white pt-16 pb-20 sm:pb-10 border-t border-white/15">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/15">
+                <!-- Coluna 1: Marca -->
+                <div class="space-y-4">
+                    <a href="index.html" class="text-2xl font-bold text-white inline-flex items-center">
+                        <span class="text-secondary mr-1.5" aria-hidden="true">✦</span>Falcontabil
+                    </a>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        Mais de 35 anos oferecendo soluções contábeis, fiscais, trabalhistas e consultoria empresarial com ética, transparência e comprometimento.
+                    </p>
+                    <div class="flex space-x-3 pt-2">
+                        <a href="https://instagram.com/efalcontabil" target="_blank" rel="noopener noreferrer" aria-label="Instagram da Falcontabil" class="w-10 h-10 rounded-full bg-white/10 hover:bg-secondary hover:text-primary flex items-center justify-center transition-all duration-300">
+                            <i class="fa-brands fa-instagram text-lg" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://e-falcontabil.com.br" target="_blank" rel="noopener noreferrer" aria-label="Site oficial da Falcontabil" class="w-10 h-10 rounded-full bg-white/10 hover:bg-secondary hover:text-primary flex items-center justify-center transition-all duration-300">
+                            <i class="fa-solid fa-globe text-lg" aria-hidden="true"></i>
+                        </a>
+                        <a data-whatsapp-link href="https://wa.me/5521967588822" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp da Falcontabil" class="w-10 h-10 rounded-full bg-white/10 hover:bg-green-500 hover:text-white flex items-center justify-center transition-all duration-300">
+                            <i class="fa-brands fa-whatsapp text-lg" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Coluna 2: Navegação -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-secondary">Navegação</h4>
+                    <ul class="space-y-2.5 text-sm text-gray-300">
+                        <li><a href="index.html" class="text-white font-semibold">Início</a></li>
+                        <li><a href="diferenciais.html" class="hover:text-white transition-colors">Diferenciais</a></li>
+                        <li><a href="servicos.html" class="hover:text-white transition-colors">Serviços</a></li>
+                        <li><a href="sobre.html" class="hover:text-white transition-colors">Sobre Nós</a></li>
+                        <li><a href="index.html#depoimentos" class="hover:text-white transition-colors">Depoimentos</a></li>
+                        <li><a href="contato.html" class="hover:text-white transition-colors">Solicitar Orçamento</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3: Serviços -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-secondary">Serviços</h4>
+                    <ul class="space-y-2.5 text-sm text-gray-300">
+                        <li><a href="servicos.html#contabilidade-geral" class="hover:text-white transition-colors">Contabilidade Geral</a></li>
+                        <li><a href="servicos.html#assessoria-fiscal" class="hover:text-white transition-colors">Assessoria Fiscal e Tributária</a></li>
+                        <li><a href="servicos.html#departamento-pessoal" class="hover:text-white transition-colors">Departamento Pessoal e RH</a></li>
+                        <li><a href="servicos.html#pericia-trabalhista" class="hover:text-white transition-colors">Perícia Trabalhista</a></li>
+                        <li><a href="servicos.html#abertura-empresas" class="hover:text-white transition-colors">Abertura e Regularização</a></li>
+                        <li><a href="servicos.html#consultoria" class="hover:text-white transition-colors">Consultoria Empresarial</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 4: Contato -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-secondary">Contato</h4>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-location-dot text-secondary mt-1" aria-hidden="true"></i>
+                            <span>Centro, Duque de Caxias - RJ</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-brands fa-whatsapp text-secondary mt-1" aria-hidden="true"></i>
+                            <a data-whatsapp-link data-whatsapp-text href="https://wa.me/5521967588822" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">+55 (21) 96758-8822</a>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-regular fa-envelope text-secondary mt-1" aria-hidden="true"></i>
+                            <a data-email-link href="mailto:contato@e-falcontabil.com.br" class="hover:text-white transition-colors break-all">contato@e-falcontabil.com.br</a>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-regular fa-clock text-secondary mt-1" aria-hidden="true"></i>
+                            <span>Seg a Sex: 08h30 às 17h30</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-300 gap-4">
+                <p>&copy; <span data-current-year>2026</span> E-Falcontabil Serviços Contábeis Ltda. Todos os direitos reservados.</p>
+                <p>Duque de Caxias - RJ • Atendimento Consultivo e Digital</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante de WhatsApp -->
+    <a
+        data-whatsapp-link
+        data-whatsapp-msg="Olá! Vim pelo site da Falcontabil e gostaria de atendimento."
+        href="https://wa.me/5521967588822"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Falar com a Falcontabil pelo WhatsApp"
+        class="fixed bottom-5 right-5 z-40 w-14 h-14 bg-green-600 hover:bg-green-700 text-white rounded-full shadow-xl flex items-center justify-center text-2xl transition-all duration-300 hover:scale-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-600 focus-visible:ring-offset-2"
+    >
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <!-- Script Compartilhado -->
+    <script src="js/script.js" defer></script>
+</body>
+</html>
